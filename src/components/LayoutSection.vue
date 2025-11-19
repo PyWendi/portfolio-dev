@@ -11,7 +11,7 @@ const props = defineProps<SectionProps>()
     <div class="my-[200px] krona-one-regular text-white px-8">
         <!-- Section title -->
          <div class="flex items-center justify-center">
-             <span class="px-12 border-b-4 border-b-green-400 mb-8 text-[40px]">
+             <span class="px-12 border-b-4 pb-2 border-b-green-400 mb-8 sm:text-[20px] md:text-[30px] lg:text-[40px]">
                  {{ props.title }}
              </span>
          </div>
