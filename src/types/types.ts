@@ -1,4 +1,3 @@
-export interface test {
+export interface SectionProps {
     title: String;
-    description: String;
 }

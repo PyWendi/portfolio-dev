@@ -21,6 +21,13 @@ body {
     font-style: normal;
 }
   
+.custom-blur-gradient {
+    backdrop-filter: blur(10px); /* équivaut à backdrop-blur-md */
+    -webkit-backdrop-filter: blur(10px); /* pour Safari */
+    mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+}
+
 /* src/assets/main.css */
 
 @tailwind base;

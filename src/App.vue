@@ -1,10 +1,12 @@
 <script setup lang="ts">
 
 import "./assets/css/main.css"
+import LayoutSection from "./components/LayoutSection.vue";
 
 // Component import 
 import NavBar from "./components/NavBar.vue";
-import Header from "./layout/Header.vue";
+import AboutSection from "./layout/AboutSection.vue";
+import HeaderSection from "./layout/HeaderSection.vue";
 
 </script>
 
@@ -14,13 +16,19 @@ import Header from "./layout/Header.vue";
 	</div> -->
 	<NavBar/>
 	<div id="home">
-		<Header :title="'titre'"/>
+		<HeaderSection/>
 	</div>
 	<div id="about">
-		<Header :title="'titre'"/>
+		<LayoutSection title="About Me">
+			<AboutSection/>
+		</LayoutSection>
 	</div>
 	<div id="skills">
-		<Header :title="'titre'"/>
+		<LayoutSection title="About Me">
+			<div>
+				Another section
+			</div>
+		</LayoutSection>
 	</div>
 	
 </template>

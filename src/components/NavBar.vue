@@ -38,7 +38,7 @@ onUnmounted(() => {
 <template>
     <div
     :class="[
-        'krona-one-regular py-4 px-6 sm:py-6 sm:px-10 flex flex-row items-center justify-between fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-[#224832d9] to-transparent backdrop-blur-md transition-transform duration-400',
+        'krona-one-regular py-4 px-6 sm:py-6 sm:px-10 flex flex-row items-center justify-between fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-[#224832d9] to-transparent  backdrop-blur-sm transition-transform duration-400',
         isHeaderVisible ? 'translate-y-0' : '-translate-y-full'
     ]">
 
