@@ -8,7 +8,8 @@ const props = defineProps<SectionProps>()
 
 
 <template>
-    <div class="my-[200px] krona-one-regular text-white px-8">
+    <div class="my-[200px] krona-one-regular text-white"
+    :class="{'px-8': !props.without_margin}">
         <!-- Section title -->
          <div class="flex items-center justify-center">
              <span class="px-12 border-b-4 pb-2 border-b-green-400 mb-8 sm:text-[20px] md:text-[30px] lg:text-[40px]">
