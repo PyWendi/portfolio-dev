@@ -12,7 +12,7 @@
          ">
         </div>
 
-        <div class="absolute  bg-[#40bd6e7d] rounded-full blur-[130px] z-[-10]
+        <div class="absolute hidden mb:block bg-[#40bd6e7d] rounded-full blur-[130px] z-[-10]
          xl:w-[450px] xl:h-[450px] xl:top-[450px] xl:left-[80%]
          lg:w-[300px] lg:h-[300px] lg:top-[450px] lg:left-[80%]
          md:w-[200px] md:h-[200px] md:top-[550px] md:left-[80%]
@@ -25,14 +25,14 @@
         <div class=" my-12 flex flex-col-reverse md:flex-row px-8 lg:px-0
         items-center justify-center gap-16">
             <!-- Text about me -->
-            <div class="w-full md:w-[60%] text-[15px] md:text-[16px] lg:text-[20px] text-justify">
+            <div class="w-full md:w-[60%] text-[13px] md:text-[16px] lg:text-[20px] text-justify">
                 I’m a passionate full-stack web developer who loves turning ideas into reality through code. 
                 What started as simple curiosity became a deep passion for building, solving problems, and exploring new technologies. <br> <br>
 
-                I thrive on challenges — they push me to grow and create smarter solutions. Beyond web development, 
+                I thrive on challenges, they push me to grow and create smarter solutions. Beyond web development, 
                 I’m also diving into game development, where creativity and logic come together in fascinating ways. <br> <br></br>
 
-                For me, coding isn’t just a job — it’s a journey of constant learning, discovery, and creation.
+                For me, coding isn’t just a job, it’s a journey of constant learning, discovery, and creation.
             </div>
     
             <!-- Image -->

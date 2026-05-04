@@ -14,7 +14,7 @@ import ServiceCard from '@/components/ServiceCard.vue';
                 service_title="Web development"
                 service_description="Complete and scalable web application development."
                 >
-                    <img class="w-[130px] h-[130px]"
+                    <img class="w-[70px] md:w-[130px] h-[70px] md:h-[130px]"
                     src="../assets/img/service_web.png" alt="Web development">
                 </ServiceCard>
         
@@ -23,7 +23,7 @@ import ServiceCard from '@/components/ServiceCard.vue';
                 service_title="BACKEND & API ENGINEERING"
                 service_description="Robust, secure and well-structured backend systems."
                 >
-                    <img class="w-[130px] h-[130px]"
+                    <img class="w-[70px] md:w-[130px] h-[70px] md:h-[130px]"
                     src="../assets/img/service_back.png" alt="BACKEND & API ENGINEERING">
                 </ServiceCard>
         
@@ -32,7 +32,7 @@ import ServiceCard from '@/components/ServiceCard.vue';
                 service_title="FRONTEND UI/UX INTEGRATION"
                 service_description="Clean, modern and responsive interfaces for better experience."
                 >
-                    <img class="w-[130px] h-[130px]"
+                    <img class="w-[70px] md:w-[130px] h-[70px] md:h-[130px]"
                     src="../assets/img/service_front.png" alt="FRONTEND UI/UX INTEGRATION">
                 </ServiceCard>
             </div>
@@ -43,7 +43,7 @@ import ServiceCard from '@/components/ServiceCard.vue';
                 service_title="DATABASE DESIGN & OPTIMIZATION"
                 service_description="Well-designed, reliable, and optimized database systems."
                 >
-                    <img class="w-[130px] h-[130px]"
+                    <img class="w-[70px] md:w-[130px] h-[70px] md:h-[130px]"
                     src="../assets/img/service_db.png" alt="DATABASE DESIGN & OPTIMIZATION">
                 </ServiceCard>
         
@@ -52,7 +52,7 @@ import ServiceCard from '@/components/ServiceCard.vue';
                 service_title="GAME DEVELOPEMENT"
                 service_description="Creating small but meaningful game experiences"
                 >
-                    <img class="w-[130px] h-[130px]"
+                    <img class="w-[70px] md:w-[130px] h-[70px] md:h-[130px]"
                     src="../assets/img/service_game.png" alt="GAME DEVELOPEMENT">
                 </ServiceCard>
         </div>

@@ -4,18 +4,18 @@ import OutsideLink from '@/components/OutsideLink.vue';
 </script>
 
 <template>
-    <div class="relative krona-one-regular text-white mt-[120px] px-8 pb-16 sm:pb-20 md:pb-20 lg:pb-20 custom-pb-10 xl:pb-0">
-        <div class="absolute  bg-[#49bb73db] rounded-full blur-[180px]
+    <div class="relative krona-one-regular text-white mt-[120px] px-8 pb-16 sm:pb-20 md:pb-20 lg:pb-20 xl:pb-0">
+        <div class="absolute bg-[#49bb73db] rounded-full md:blur-[180px]
          xl:w-[700px] xl:h-[700px] xl:top-8 xl:left-[58%]
          lg:w-[500px] lg:h-[500px] lg:top-0 lg:left-[55%]
          md:w-[300px] md:h-[300px] md:top-16 md:left-[55%]
          sm:w-[500px] sm:h-[500px] sm:top-4 sm:left-[15%]
          xs:w-[550px] xs:h-[550px] xs:top-4 xs:left-[17%]
-         w-[450px] h-[450px] top-4 left-[17%]
+         w-[250px] h-[550px] top-0 left-[10%] blur-[230px]
          ">
         </div>
 
-        <div class="flex flex-col-reverse md:flex-row items-center justify-between pb-6">
+        <div class="flex flex-col-reverse md:flex-row items-center justify-between pb-0 md:pb-6">
             <!-- Text -->
             <div class="text-white">
 
@@ -23,15 +23,15 @@ import OutsideLink from '@/components/OutsideLink.vue';
                     Salutation,
                 </div>
 
-                <div class="text-[45px] sm:text-[50px] md:text-[50px] lg:text-[60px] xl:text-[90px]">
+                <div class="text-[33px] xs:text-[45px] sm:text-[50px] md:text-[50px] lg:text-[60px] xl:text-[90px]">
                     I'm <span class="border-b-4 border-green-400">Anderson</span>
                 </div>
 
-                <div class="my-2 text-green-400 text-[27px] sm:text-[35px] md:text-[35px] lg:text-[40px] xl:text-[50px]">
+                <div class="my-2 text-green-400 text-[22px] sm:text-[35px] md:text-[35px] lg:text-[40px] xl:text-[50px]">
                     Fullstack Developer
                 </div>
 
-                <div class="text-[17px] sm:text-[17px] md:text-[20px] lg:text-[30px] xl:text-[40px]">
+                <div class="text-[15px] sm:text-[15x] md:text-[20px] lg:text-[30px] xl:text-[40px]">
                     Passionate about coding, <br />
                     driven by curiosity, <br />
                     and powered by <br />
@@ -42,11 +42,12 @@ import OutsideLink from '@/components/OutsideLink.vue';
 
 
             <!-- Illustration -->
-            <img 
-            class="mb-16 md:mb-0  w-[80%] md:w-[40%] relative mr-0 md:mr-10 
-            
-            border-4 md:border-8 rounded-full p-[15px] md:p-[40px] border-dashed border-green-400 "
-            src="../assets/img/illustration.png" alt="Main illustration">
+            <div class="mb-10 md:mb-0 top-[-20px] md:top-0 w-[80%] md:w-[40%] relative mr-0 md:mr-10">
+                <div class="absolute inset-0 border-4 md:border-8 rounded-full border-dashed border-green-400 animate-spin-slow"></div>
+                <img 
+                class="relative rounded-full p-[15px] md:p-[40px]"
+                src="../assets/img/illustration.png" alt="Main illustration">
+            </div>
             <!-- bg-[#49bb7369] -->
         </div>
 
@@ -55,7 +56,7 @@ import OutsideLink from '@/components/OutsideLink.vue';
             <!-- Linkedin -->
             <li>
                 <OutsideLink 
-                link="https://linkedin.com/in/anderson-rakotondranaivo-b7b466361/" 
+                link="https://www.linkedin.com/in/joyaux-wendi-anderson-rakotondranaivo-gilbert-b7b466361/" 
                 tooltip_text="Linkedin">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
                     class="lucide lucide-linkedin-icon lucide-linkedin w-[15px] md:w-[17px] lg:w-[20px] xl:w-[24px]"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>

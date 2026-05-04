@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import type { OutsideLinkProps } from '@/types/types';
-import { ref, defineProps } from 'vue';
+import { ref } from 'vue';
 
 const {
     link, 
@@ -20,11 +20,7 @@ const copieToClipboard = async (url_link: string) => {
 }
 
 const toggleTrueTooltip = () => {
-    showTooltip.value = false
-
-    setTimeout(() => {
-        showTooltip.value = true
-    }, 1000);
+    showTooltip.value = true
 }
 
 const toggleFalseTooltip = () => {

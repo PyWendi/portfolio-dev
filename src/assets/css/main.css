@@ -1,5 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 html {
     scroll-behavior: smooth;
+    scrollbar-width: 0px;
 }
 
 body {
@@ -7,6 +13,11 @@ body {
     margin: 0;
     overflow-x: hidden;
     background-color: #122F3B;
+    width: 100%;
+}
+
+body, html{
+    height: 100%;
 }
 
 .krona-one-regular {
@@ -28,10 +39,15 @@ body {
     -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
 }
 
-/* src/assets/main.css */
+@keyframes spin-slow {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
+.animate-spin-slow {
+    animation: spin-slow 100s linear infinite;
+}
