@@ -4,7 +4,7 @@ import OutsideLink from '@/components/OutsideLink.vue';
 </script>
 
 <template>
-    <div class="relative krona-one-regular text-white mt-[120px] px-8 pb-16 sm:pb-20 md:pb-20 lg:pb-20 custom-pb-10 xl:pb-0">
+    <div class="relative krona-one-regular text-white mt-[120px] px-8 pb-16 sm:pb-20 md:pb-20 lg:pb-20 xl:pb-0">
         <div class="absolute  bg-[#49bb73db] rounded-full blur-[180px]
          xl:w-[700px] xl:h-[700px] xl:top-8 xl:left-[58%]
          lg:w-[500px] lg:h-[500px] lg:top-0 lg:left-[55%]
@@ -12,7 +12,7 @@ import OutsideLink from '@/components/OutsideLink.vue';
          sm:w-[500px] sm:h-[500px] sm:top-4 sm:left-[15%]
          xs:w-[550px] xs:h-[550px] xs:top-4 xs:left-[17%]
          w-[450px] h-[450px] top-4 left-[17%]
-         ">
+         ">rakotondranaivogilbert21@gmail.com
         </div>
 
         <div class="flex flex-col-reverse md:flex-row items-center justify-between pb-6">

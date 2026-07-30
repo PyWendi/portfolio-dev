@@ -1,5 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 html {
     scroll-behavior: smooth;
+    scrollbar-width: 0px;
 }
 
 body {
@@ -7,6 +13,10 @@ body {
     margin: 0;
     overflow-x: hidden;
     background-color: #122F3B;
+}
+
+body, html{
+    height: 100%;
 }
 
 .krona-one-regular {
@@ -27,11 +37,3 @@ body {
     mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
     -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
 }
-
-/* src/assets/main.css */
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-

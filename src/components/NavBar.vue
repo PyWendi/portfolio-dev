@@ -38,7 +38,7 @@ onUnmounted(() => {
 <template>
     <div
     :class="[
-        'krona-one-regular py-4 px-6 sm:py-6 sm:px-10 flex flex-row items-center justify-between fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-[#224832d9] to-transparent  backdrop-blur-sm transition-transform duration-400',
+        'krona-one-regular py-4 px-6 sm:py-6 sm:px-10 flex flex-row items-center justify-between fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-[#224832d9] to-transparent backdrop-blur-sm transition-transform duration-400',
         isHeaderVisible ? 'translate-y-0' : '-translate-y-full'
     ]">
 
@@ -63,13 +63,13 @@ onUnmounted(() => {
         <li class="hover:text-green-200 transition-all duration-300 cursor-pointer">
             <a href="#about">About</a> </li>
         <li class="hover:text-green-200 transition-all duration-300 cursor-pointer">
-          	<a href="#services">Services</a> </li>
+            <a href="#projects">Projects</a> </li>
         <li class="hover:text-green-200 transition-all duration-300 cursor-pointer">
             <a href="#skills">Skills</a> </li>
         <li class="hover:text-green-200 transition-all duration-300 cursor-pointer">
-            <a href="#projects">Projects</a> </li>
-        <li class="hover:text-green-200 transition-all duration-300 cursor-pointer">
-            <a href="#extra">Extra</a> </li>
+            <a href="#services">Services</a> </li>
+      <li class="hover:text-green-200 transition-all duration-300 cursor-pointer">
+            <a href="#extra">Experiences</a> </li>
         <li class="hover:text-green-200 transition-all duration-300 cursor-pointer">
             <a href="#contact">Contact</a> </li>
       </ul>
@@ -113,11 +113,11 @@ onUnmounted(() => {
             <li @click="isMenuOpen = false" class="hover:text-green-200 cursor-pointer">
                 <a href="#about">About</a></li>
             <li @click="isMenuOpen = false" class="hover:text-green-200 cursor-pointer">
+                <a href="#projects">Projects</a></li>
+            <li @click="isMenuOpen = false" class="hover:text-green-200 cursor-pointer">
                 <a href="#skills">Skills</a></li>
             <li @click="isMenuOpen = false" class="hover:text-green-200 cursor-pointer">
                 <a href="#services">Services</a></li>
-            <li @click="isMenuOpen = false" class="hover:text-green-200 cursor-pointer">
-                <a href="#projects">Projects</a></li>
             <li @click="isMenuOpen = false" class="hover:text-green-200 cursor-pointer">
                 <a href="#extra">Extra</a></li>
             <li @click="isMenuOpen = false" class="hover:text-green-200 cursor-pointer">
