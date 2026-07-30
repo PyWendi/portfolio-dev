@@ -15,6 +15,7 @@ import kosherImg from '../assets/img/projects/kosher.png';
 import finflowImg from '../assets/img/projects/finflow.png';
 import portfolioImg from '../assets/img/projects/portfolio.png';
 import mtpUrgencyImg from '../assets/img/projects/mtp-urgency.png';
+import callLawImg from '../assets/img/projects/call-law.png';
 import uaccemSiteImg from '../assets/img/projects/uaccem-website.png';
 
 
@@ -23,28 +24,18 @@ const projects = [
     {
         project_title: "Web Portfolio",
         post: "Frontend Developer",
-        description: `Lorem ipsum dolor sit amet, 
-        consectetur adipiscing elit. Ut molestie interdum eros 
-        et elementum. Suspendisse potenti. 
-        Pellentesque non sodales mauris. Vivamus leo erat, 
-        consectetur eu convallis quis, hendrerit ut libero. 
-        Etiam varius eu nibh sollicitudin vestibulum.`,
+        description: `Responsive and modular web application custom-built with Vue 3 and Tailwind CSS.`,
         technos: ['Vue.js', 'Tailwind CSS'],
         source_url: "https://github.com/PyWendi/portfolio-dev",
         preview_url: "https://pilote360.io/",
         image: portfolioImg,
-        with_source: false,
+        with_source: true,
         with_preview: true
     },
     {
         project_title: "Pilote360",
         post: "Fullstack Developer and Project Manager",
-        description: `Lorem ipsum dolor sit amet, 
-        consectetur adipiscing elit. Ut molestie interdum eros 
-        et elementum. Suspendisse potenti. 
-        Pellentesque non sodales mauris. Vivamus leo erat, 
-        consectetur eu convallis quis, hendrerit ut libero. 
-        Etiam varius eu nibh sollicitudin vestibulum.`,
+        description: `Financial management and treasury optimization SaaS platform.`,
         technos: ['FastAPI', 'React.js', 'MongoDB', 'Tailwind CSS', 'AI-Assisted Developement', 'N8N'],
         source_url: "",
         preview_url: "https://pilote360.io/",
@@ -55,12 +46,7 @@ const projects = [
     {
         project_title: "Winedge",
         post: "Fullstack Developer",
-        description: `Lorem ipsum dolor sit amet, 
-        consectetur adipiscing elit. Ut molestie interdum eros 
-        et elementum. Suspendisse potenti. 
-        Pellentesque non sodales mauris. Vivamus leo erat, 
-        consectetur eu convallis quis, hendrerit ut libero. 
-        Etiam varius eu nibh sollicitudin vestibulum.`,
+        description: `FinTech platform for effortless micro-savings and automated personal investments.`,
         technos: ['FastAPI', 'Next.js', 'MongoDB', 'Tailwind CSS', 'AI-Assisted Developement', 'N8N'],
         source_url: "",
         preview_url: "https://winedge.io",
@@ -71,12 +57,7 @@ const projects = [
     {
         project_title: "Cloud SOIBY",
         post: "Fullstack Developer",
-        description: `Lorem ipsum dolor sit amet, 
-        consectetur adipiscing elit. Ut molestie interdum eros 
-        et elementum. Suspendisse potenti. 
-        Pellentesque non sodales mauris. Vivamus leo erat, 
-        consectetur eu convallis quis, hendrerit ut libero. 
-        Etiam varius eu nibh sollicitudin vestibulum.`,
+        description: `Cloud hosting and web infrastructure management platform (under active development).`,
         technos: ['FastAPI', 'React.js', 'PostgreSQL', 'Tailwind CSS', 'AI-Assisted Developement', 'N8N'],
         source_url: "",
         preview_url: "",
@@ -87,12 +68,7 @@ const projects = [
     {
         project_title: "SCO App",
         post: "Backend developer (School project)",
-        description: `Lorem ipsum dolor sit amet, 
-        consectetur adipiscing elit. Ut molestie interdum eros 
-        et elementum. Suspendisse potenti. 
-        Pellentesque non sodales mauris. Vivamus leo erat, 
-        consectetur eu convallis quis, hendrerit ut libero. 
-        Etiam varius eu nibh sollicitudin vestibulum.`,
+        description: `Web application designed for centralizing student records and streamlining administrative workflows.`,
         technos: ['FastAPI', 'Ably', 'Next.js', 'PostgreSQL', 'Tailwind CSS'],
         source_url: "",
         preview_url: "",
@@ -103,12 +79,7 @@ const projects = [
     {
         project_title: "NeedKOSHER",
         post: "Fullstack developer (Freelancing)",
-        description: `Lorem ipsum dolor sit amet, 
-        consectetur adipiscing elit. Ut molestie interdum eros 
-        et elementum. Suspendisse potenti. 
-        Pellentesque non sodales mauris. Vivamus leo erat, 
-        consectetur eu convallis quis, hendrerit ut libero. 
-        Etiam varius eu nibh sollicitudin vestibulum.`,
+        description: `Centralized web platform aggregating travel, events, and catering services for the Jewish community.`,
         technos: ['Nuxt', 'Tailwind CSS', 'Express.js', 'MySQL'],
         source_url: "",
         preview_url: "https://web.koshergate.com",
@@ -119,31 +90,21 @@ const projects = [
     {
         project_title: "UACEEM FinFlowImg",
         post: "Fullstack developer (internship)",
-        description: `Lorem ipsum dolor sit amet, 
-        consectetur adipiscing elit. Ut molestie interdum eros 
-        et elementum. Suspendisse potenti. 
-        Pellentesque non sodales mauris. Vivamus leo erat, 
-        consectetur eu convallis quis, hendrerit ut libero. 
-        Etiam varius eu nibh sollicitudin vestibulum.`,
+        description: `Web application designed to digitize and track all financial transactions across the university.`,
         technos: ['Laravel', 'Tailwind CSS', 'Blade', 'MySQL'],
-        source_url: "https://github.com/PyWendi",
-        preview_url: "https://web.koshergate.com",
+        source_url: "",
+        preview_url: "",
         image: finflowImg,
         with_source: false,
         with_preview: false
     },
     {
         project_title: "UACEEM website v1",
-        post: "Fullstack developer (internship)",
-        description: `Lorem ipsum dolor sit amet, 
-        consectetur adipiscing elit. Ut molestie interdum eros 
-        et elementum. Suspendisse potenti. 
-        Pellentesque non sodales mauris. Vivamus leo erat, 
-        consectetur eu convallis quis, hendrerit ut libero. 
-        Etiam varius eu nibh sollicitudin vestibulum.`,
+        post: "Frontend developer (internship)",
+        description: `Design and development of the official website (V1) for ACEEM University.`,
         technos: ['HTML', 'CSS', 'Javascrypt'],
         source_url: "",
-        preview_url: "https://web.koshergate.com",
+        preview_url: "",
         image: uaccemSiteImg,
         with_source: false,
         with_preview: false
@@ -154,35 +115,30 @@ const projects = [
     {
         project_title: "Call-Law",
         post: "Fullstack Developer (School project)",
-        description: `Lorem ipsum dolor sit amet, 
-        consectetur adipiscing elit. Ut molestie interdum eros 
-        et elementum. Suspendisse potenti. 
-        Pellentesque non sodales mauris. Vivamus leo erat, 
-        consectetur eu convallis quis, hendrerit ut libero. 
-        Etiam varius eu nibh sollicitudin vestibulum.`,
+        description: `Legal consultation platform built with React Native (responsive web-first, mobile layout fine-tuning upcoming).`,
         technos: ['Django', 'React Native', 'PostgreSQL', 'Tailwind CSS'],
         source_url: "",
         preview_url: "",
-        image: scoAppImg,
+        image: callLawImg,
         with_source: false,
         with_preview: false
     },
-    {
-        project_title: "Socolait (School project)",
-        post: "Backend developer, Integrator",
-        description: `Lorem ipsum dolor sit amet, 
-        consectetur adipiscing elit. Ut molestie interdum eros 
-        et elementum. Suspendisse potenti. 
-        Pellentesque non sodales mauris. Vivamus leo erat, 
-        consectetur eu convallis quis, hendrerit ut libero. 
-        Etiam varius eu nibh sollicitudin vestibulum.`,
-        technos: ['React.js', 'Django', 'PostgreSQL', 'Tailwind CSS'],
-        source_url: "",
-        preview_url: "",
-        image: scoAppImg,
-        with_source: false,
-        with_preview: false
-    },
+    // {
+    //     project_title: "Socolait (School project)",
+    //     post: "Backend developer, Integrator",
+    //     description: `Lorem ipsum dolor sit amet, 
+    //     consectetur adipiscing elit. Ut molestie interdum eros 
+    //     et elementum. Suspendisse potenti. 
+    //     Pellentesque non sodales mauris. Vivamus leo erat, 
+    //     consectetur eu convallis quis, hendrerit ut libero. 
+    //     Etiam varius eu nibh sollicitudin vestibulum.`,
+    //     technos: ['React.js', 'Django', 'PostgreSQL', 'Tailwind CSS'],
+    //     source_url: "",
+    //     preview_url: "",
+    //     image: scoAppImg,
+    //     with_source: false,
+    //     with_preview: false
+    // },
     {
         project_title: "MTP Urgence",
         post: "Fullstack",

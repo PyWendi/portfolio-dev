@@ -13,7 +13,7 @@ const {
 <template>
     <div class="w-[300px] h-[350px]
     flex flex-col justify-center items-center
-    border-2 border-green-400 rounded-md bg-[#4ade8020]
+    border-2 border-green-400 rounded-md bg-[#4ade8020]/5
     ">
         <div class="mt-5 h-[150px]">
             <slot/>     

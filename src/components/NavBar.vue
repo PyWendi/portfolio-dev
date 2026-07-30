@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { ref, type Ref, onMounted, onUnmounted } from "vue"
+import resumePDF from "@/assets/resume/Fullstack developer.pdf"
+import CursorTarget from '@/components/CursorTarget.vue';
 
 const isMenuOpen: Ref<Boolean> = ref(false)
 const isHeaderVisible: Ref<boolean> = ref(true)
@@ -9,8 +11,13 @@ const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value
 }
 
-const downloadResume = async () => {
-    await alert("Resume downloaded")
+const downloadResume = () => {
+    const link = document.createElement('a')
+    link.href = resumePDF
+    link.download = 'Fullstack developer.pdf'
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
     isMenuOpen.value = false
 }
 
@@ -42,14 +49,13 @@ onUnmounted(() => {
         isHeaderVisible ? 'translate-y-0' : '-translate-y-full'
     ]">
 
-
-
     <!-- Page logo/title -->
     <div
       class="momo-signature-regular font-semibold text-green-400 
              text-[20px] sm:text-[25px] lg:text-[20px] xl:text-[25px]">
       Anderson.
     </div>
+
 
     <!-- Page nav section (desktop) -->
     <div class="hidden lg:block">
@@ -58,19 +64,19 @@ onUnmounted(() => {
                gap-4 sm:gap-6 lg:gap-4 xl:gap-10 text-[16px] sm:text-[18px] lg:text-[16px] xl:text-[16px]
                text-white rounded-full bg-[#4ade809e] 
                px-5 py-2 sm:px-8 sm:py-3 shadow-[0_0_10px_#36738d]">
-        <li class="hover:text-green-200 transition-all duration-300 cursor-pointer">
+        <li class="hover:text-green-200 transition-all duration-300 cursor-pointer cursor-target">
             <a href="#home">Home</a> </li>
-        <li class="hover:text-green-200 transition-all duration-300 cursor-pointer">
+        <li class="hover:text-green-200 transition-all duration-300 cursor-pointer cursor-target">
             <a href="#about">About</a> </li>
-        <li class="hover:text-green-200 transition-all duration-300 cursor-pointer">
+        <li class="hover:text-green-200 transition-all duration-300 cursor-pointer cursor-target">
             <a href="#projects">Projects</a> </li>
-        <li class="hover:text-green-200 transition-all duration-300 cursor-pointer">
+        <li class="hover:text-green-200 transition-all duration-300 cursor-pointer cursor-target">
             <a href="#skills">Skills</a> </li>
-        <li class="hover:text-green-200 transition-all duration-300 cursor-pointer">
+        <li class="hover:text-green-200 transition-all duration-300 cursor-pointer cursor-target">
             <a href="#services">Services</a> </li>
-      <li class="hover:text-green-200 transition-all duration-300 cursor-pointer">
+      <li class="hover:text-green-200 transition-all duration-300 cursor-pointer cursor-target">
             <a href="#extra">Experiences</a> </li>
-        <li class="hover:text-green-200 transition-all duration-300 cursor-pointer">
+        <li class="hover:text-green-200 transition-all duration-300 cursor-pointer cursor-target">
             <a href="#contact">Contact</a> </li>
       </ul>
     </div>
@@ -78,8 +84,9 @@ onUnmounted(() => {
     <!-- Page resume (desktop only) -->
     <div class="hidden lg:block">
       <button
+        @click="downloadResume"
         class="flex items-center gap-2 border-2 border-white rounded-full py-1.5 px-4 sm:py-1.5 sm:px-6
-               duration-300 hover:bg-[#ffffff39]">
+               duration-300 hover:bg-[#ffffff39] cursor-target">
         <span class="text-white text-[14px] sm:text-[16px] lg:text-[14px] xl:text-[16px]">Resume</span>
         <span>
           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 24 24"
@@ -108,19 +115,19 @@ onUnmounted(() => {
             class="absolute top-full w-full bg-[#4ade809e] backdrop-blur-md shadow-[0_0_10px_#36738d]
                     py-4 px-8 flex flex-col gap-4 text-white right-0
                     text-[16px] font-medium">
-            <li @click="isMenuOpen = false" class="hover:text-green-200 cursor-pointer">
+            <li @click="isMenuOpen = false" class="hover:text-green-200 cursor-target cursor-pointer">
                 <a href="#home">Home</a></li>
-            <li @click="isMenuOpen = false" class="hover:text-green-200 cursor-pointer">
+            <li @click="isMenuOpen = false" class="hover:text-green-200 cursor-target cursor-pointer">
                 <a href="#about">About</a></li>
-            <li @click="isMenuOpen = false" class="hover:text-green-200 cursor-pointer">
+            <li @click="isMenuOpen = false" class="hover:text-green-200 cursor-target cursor-pointer">
                 <a href="#projects">Projects</a></li>
-            <li @click="isMenuOpen = false" class="hover:text-green-200 cursor-pointer">
+            <li @click="isMenuOpen = false" class="hover:text-green-200 cursor-target cursor-pointer">
                 <a href="#skills">Skills</a></li>
-            <li @click="isMenuOpen = false" class="hover:text-green-200 cursor-pointer">
+            <li @click="isMenuOpen = false" class="hover:text-green-200 cursor-target cursor-pointer">
                 <a href="#services">Services</a></li>
-            <li @click="isMenuOpen = false" class="hover:text-green-200 cursor-pointer">
+            <li @click="isMenuOpen = false" class="hover:text-green-200 cursor-target cursor-pointer">
                 <a href="#extra">Extra</a></li>
-            <li @click="isMenuOpen = false" class="hover:text-green-200 cursor-pointer">
+            <li @click="isMenuOpen = false" class="hover:text-green-200 cursor-target cursor-pointer">
                 <a href="#contact">Contact</a></li>
 
             <!-- Resume -->

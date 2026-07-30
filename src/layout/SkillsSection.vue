@@ -20,31 +20,31 @@ import SkillsCard from '@/components/SkillsCard.vue';
             <!-- language -->
             <div class="flex flex-col items-center justify-center w-full gap-10">
                 <SkillsCard card_title="Programing languages">
-                    <img class="w-full sm:w-[75%] "
+                    <img class="w-full sm:w-[75%] cursor-target"
                     src="../assets/img/logo/language.png" 
                     alt="Programing language">
                 </SkillsCard>
 
                 <SkillsCard card_title="Front-ends">
-                    <img class="w-full sm:w-[75%] "
+                    <img class="w-full sm:w-[75%] cursor-target"
                     src="../assets/img/logo/frontend.png" 
                     alt="Frontend frameworks">
                 </SkillsCard>
 
                 <SkillsCard card_title="Back-ends">
-                    <img class="w-full sm:w-[75%] "
+                    <img class="w-full sm:w-[75%] cursor-target"
                     src="../assets/img/logo/backend.png" 
                     alt="Backend frameworks">
                 </SkillsCard>
 
                 <SkillsCard card_title="Tools">
-                    <img class="w-full sm:w-[75%] "
+                    <img class="w-full sm:w-[75%] cursor-target"
                     src="../assets/img/logo/tools.png" 
                     alt="Tools">
                 </SkillsCard>
 
                 <SkillsCard card_title="Game dev and other">
-                    <img class="w-full sm:w-[75%] "
+                    <img class="w-full sm:w-[75%] cursor-target"
                     src="../assets/img/logo/other.png" 
                     alt="Game dev and other">
                 </SkillsCard>

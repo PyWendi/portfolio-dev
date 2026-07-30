@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import OutsideLink from '@/components/OutsideLink.vue';
+import ShinyText from '@/components/ShinyText.vue';
+
+// Grid distortion background
 
 </script>
 
@@ -28,7 +31,17 @@ import OutsideLink from '@/components/OutsideLink.vue';
                 </div>
 
                 <div class="my-2 text-green-400 text-[27px] sm:text-[35px] md:text-[35px] lg:text-[40px] xl:text-[50px]">
-                    Fullstack Developer
+                    <ShinyText
+                        text="Fullstack Developer"
+                        :speed="2"
+                        :delay="0"
+                        color="#4ade80"
+                        shine-color="#ffffff"
+                        :spread="120"
+                        direction="left"
+                        :yoyo="false"
+                        :pause-on-hover="false"
+                    />
                 </div>
 
                 <div class="text-[17px] sm:text-[17px] md:text-[20px] lg:text-[30px] xl:text-[40px]">

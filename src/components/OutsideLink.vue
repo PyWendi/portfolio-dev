@@ -35,7 +35,7 @@ const toggleFalseTooltip = () => {
 </script>
 
 <template>
-    <div class="relative">
+    <div class="relative cursor-target">
         <!-- Outside link -->
         <a v-if="!is_link_to_copy" :href="link" target="_blank"
         @mouseenter="toggleTrueTooltip" @mouseleave="toggleFalseTooltip">

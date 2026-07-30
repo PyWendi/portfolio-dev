@@ -52,7 +52,7 @@ const {
                 <!-- Source -->
                 <a :href="source_url" target="_blank"
                 v-if="with_source"
-                class="cursor-pointer flex items-center justify-center gap-2 px-[10px] py-1 bg-[#fff] rounded-full
+                class="cursor-pointer cursor-target flex items-center justify-center gap-2 px-[10px] py-1 bg-[#fff] rounded-full
                 duration-100 hover:shadow-[0px_0px_10px_#b0b0b0]">
                     <img class="w-[20px] xl:w-[25px]" 
                     src="../assets/img/logo/github.svg" alt="Github icon">
@@ -62,7 +62,7 @@ const {
                 <!-- Preview -->
                 <a :href="preview_url" target="_blank"
                 v-if="with_preview"
-                class="cursor-pointer flex items-center justify-center gap-2 px-[10px] py-1 bg-[#fff] rounded-full
+                class="cursor-pointer cursor-target flex items-center justify-center gap-2 px-[10px] py-1 bg-[#fff] rounded-full
                 duration-100 hover:shadow-[0px_0px_10px_#b0b0b0]">
                     <img class="w-[18px] xl:w-[25px]" 
                     src="../assets/img/logo/preview.svg" alt="Github icon">

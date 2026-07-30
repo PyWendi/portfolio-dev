@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import OutsideLink from '@/components/OutsideLink.vue';
-import sunflowerImg from "../assets/img/sunflower.png"
+import sunflowerImg from "../assets/img/sunflower.png";
+import ScrollFloat from '@/components/ScrollFloat.vue';
 </script>
 
 <template>
@@ -8,10 +9,22 @@ import sunflowerImg from "../assets/img/sunflower.png"
 
         <div class="px-8">
             <!-- Big text -->
-            <div class="flex items-center justify-center md:justify-start">
-                <div class="text-[30px] sm:text-[40px] md:text-[50px] lg:text-[70px] xl:text-[90px] text-green-400 uppercase">Get in touch</div>
-                <span class="hidden sm:block ml-8 md:ml-16 w-[50px] md:w-[100px] border-2 md:border-4 border-green-400 bg-green-400"></span>
-            </div>
+           
+                <div class="flex items-center justify-center md:justify-start">
+                    <div class="">
+                        <ScrollFloat
+                            :animation-duration="2"
+                            ease="back.inOut(2)"
+                            scroll-start="center bottom+=50%"
+                            scroll-end="bottom bottom-=40%"
+                            textClassName="text-[30px] sm:text-[40px] md:text-[50px] lg:text-[70px] xl:text-[90px] text-green-400 uppercase"
+                            :stagger="0.03"
+                        >Get in touch
+                    </ScrollFloat>
+                    </div>
+                    <span class="hidden sm:block ml-8 md:ml-16 w-[50px] md:w-[100px] border-2 md:border-4 border-green-400 bg-green-400"></span>
+                </div>
+            
     
             <!-- Contact text -->
             <p class="w-full md:w-1/2 text-justify text-[13px] sm:text-[15px] md:text-[20px] lg:text-[25px] xl:text-[30px] mt-[20px]">
