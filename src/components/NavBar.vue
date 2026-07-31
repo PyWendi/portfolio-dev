@@ -1,8 +1,8 @@
 <script setup lang="ts">
   import { ref, type Ref, onMounted, onUnmounted } from "vue"
   import { useI18n } from 'vue-i18n'
-  import resumeFR from "@/assets/resume/CV Anderson - developpeur fullstack.pdf"
-  import resumeEN from "@/assets/resume/Fullstack developer.pdf"
+  import resumeFR from "@/assets/resume/CV - Anderson - Developpeur Fullstack.pdf"
+  import resumeEN from "@/assets/resume/CV - Anderson - Fullstack Developer.pdf"
   import CursorTarget from '@/components/CursorTarget.vue';
 
   const { t, locale } = useI18n()
@@ -23,7 +23,7 @@
     const link = document.createElement('a')
     const isFr = locale.value === 'fr'
     link.href = isFr ? resumeFR : resumeEN
-    link.download = isFr ? 'CV Anderson - developpeur fullstack.pdf' : 'Fullstack developer.pdf'
+    link.download = isFr ? 'CV - Anderson - Developpeur Fullstack.pdf' : 'CV - Anderson - Fullstack Developer.pdf'
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
