@@ -1,7 +1,8 @@
 <script lang="ts" setup>
 import ServiceCard from '@/components/ServiceCard.vue';
 import SpotlightCard from '@/components/SpotlightCard.vue';
-
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n()
 </script>
 
 <template>
@@ -13,11 +14,11 @@ import SpotlightCard from '@/components/SpotlightCard.vue';
                 <SpotlightCard class="custom-spotlight-card" spotlight-color="rgba(0, 229, 255, 0.7)">
                     <ServiceCard
                     img_url="../assets/img/service_web.png"
-                    service_title="Web development"
-                    service_description="Complete and scalable web application development."
+                    :service_title="t('sections.services.items.web.title')"
+                    :service_description="t('sections.services.items.web.description')"
                     >
-                        <img class="w-[130px] h-[130px]"
-                        src="../assets/img/service_web.png" alt="Web development">
+                        <img class="w-[80px] h-[80px] md:w-[100px] md:h-[100px]"
+                        src="../assets/img/service_web.png" :alt="t('sections.services.items.web.title')">
                     </ServiceCard>
                 </SpotlightCard>
         
@@ -25,11 +26,11 @@ import SpotlightCard from '@/components/SpotlightCard.vue';
 
                     <ServiceCard
                     img_url="../assets/img/service_back.png"
-                    service_title="BACKEND & API ENGINEERING"
-                    service_description="Robust, secure and well-structured backend systems."
+                    :service_title="t('sections.services.items.backend.title')"
+                    :service_description="t('sections.services.items.backend.description')"
                     >
-                        <img class="w-[130px] h-[130px]"
-                        src="../assets/img/service_back.png" alt="BACKEND & API ENGINEERING">
+                        <img class="w-[80px] h-[80px] md:w-[100px] md:h-[100px]"
+                        src="../assets/img/service_back.png" :alt="t('sections.services.items.backend.title')">
                     </ServiceCard>
                 </SpotlightCard>
         
@@ -37,11 +38,11 @@ import SpotlightCard from '@/components/SpotlightCard.vue';
 
                     <ServiceCard
                     img_url="../assets/img/service_front.png"
-                    service_title="FRONTEND UI/UX INTEGRATION"
-                    service_description="Clean, modern and responsive interfaces for better experience."
+                    :service_title="t('sections.services.items.frontend.title')"
+                    :service_description="t('sections.services.items.frontend.description')"
                     >
-                        <img class="w-[130px] h-[130px]"
-                        src="../assets/img/service_front.png" alt="FRONTEND UI/UX INTEGRATION">
+                        <img class="w-[80px] h-[80px] md:w-[100px] md:h-[100px]"
+                        src="../assets/img/service_front.png" :alt="t('sections.services.items.frontend.title')">
                     </ServiceCard>
                 </SpotlightCard>
             </div>
@@ -52,11 +53,11 @@ import SpotlightCard from '@/components/SpotlightCard.vue';
 
                     <ServiceCard
                     img_url="../assets/img/service_db.png"
-                    service_title="DATABASE DESIGN & OPTIMIZATION"
-                    service_description="Well-designed, reliable, and optimized database systems."
+                    :service_title="t('sections.services.items.database.title')"
+                    :service_description="t('sections.services.items.database.description')"
                     >
-                        <img class="w-[130px] h-[130px]"
-                        src="../assets/img/service_db.png" alt="DATABASE DESIGN & OPTIMIZATION">
+                        <img class="w-[80px] h-[80px] md:w-[100px] md:h-[100px]"
+                        src="../assets/img/service_db.png" :alt="t('sections.services.items.database.title')">
                     </ServiceCard>
                 </SpotlightCard>
         
@@ -64,11 +65,11 @@ import SpotlightCard from '@/components/SpotlightCard.vue';
 
                     <ServiceCard
                     img_url="../assets/img/service_game.png"
-                    service_title="GAME DEVELOPEMENT"
-                    service_description="Creating small but meaningful game experiences"
+                    :service_title="t('sections.services.items.game.title')"
+                    :service_description="t('sections.services.items.game.description')"
                     >
-                        <img class="w-[130px] h-[130px]"
-                        src="../assets/img/service_game.png" alt="GAME DEVELOPEMENT">
+                        <img class="w-[80px] h-[80px] md:w-[100px] md:h-[100px]"
+                        src="../assets/img/service_game.png" :alt="t('sections.services.items.game.title')">
                     </ServiceCard>
                 </SpotlightCard>
         </div>

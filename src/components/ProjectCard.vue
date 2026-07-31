@@ -1,6 +1,8 @@
 <script lang="ts" setup>
 import { type ProjectCardProps } from '../types/types';
-// import { defineProps } from 'vue';
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n()
 const {
     project_title,
     post,
@@ -56,7 +58,7 @@ const {
                 duration-100 hover:shadow-[0px_0px_10px_#b0b0b0]">
                     <img class="w-[20px] xl:w-[25px]" 
                     src="../assets/img/logo/github.svg" alt="Github icon">
-                    <p class="text-black text-[13px] xl:text-[17px]">Source</p>
+                    <p class="text-black text-[13px] xl:text-[17px]">{{ t('sections.projects.source') }}</p>
                 </a>
     
                 <!-- Preview -->
@@ -66,7 +68,7 @@ const {
                 duration-100 hover:shadow-[0px_0px_10px_#b0b0b0]">
                     <img class="w-[18px] xl:w-[25px]" 
                     src="../assets/img/logo/preview.svg" alt="Github icon">
-                    <p class="text-black text-[13px] xl:text-[17px]">Preview</p>
+                    <p class="text-black text-[13px] xl:text-[17px]">{{ t('sections.projects.preview') }}</p>
                 </a>
 
             </div>    

@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import SkillsCard from '@/components/SkillsCard.vue';
-
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n()
 </script>
 
 <template>
@@ -19,34 +20,34 @@ import SkillsCard from '@/components/SkillsCard.vue';
         <div class="block ">
             <!-- language -->
             <div class="flex flex-col items-center justify-center w-full gap-10">
-                <SkillsCard card_title="Programing languages">
+                <SkillsCard :card_title="t('sections.skills.categories.languages')">
                     <img class="w-full sm:w-[75%] cursor-target"
                     src="../assets/img/logo/language.png" 
-                    alt="Programing language">
+                    :alt="t('sections.skills.alts.languages')">
                 </SkillsCard>
 
-                <SkillsCard card_title="Front-ends">
+                <SkillsCard :card_title="t('sections.skills.categories.frontend')">
                     <img class="w-full sm:w-[75%] cursor-target"
                     src="../assets/img/logo/frontend.png" 
-                    alt="Frontend frameworks">
+                    :alt="t('sections.skills.alts.frontend')">
                 </SkillsCard>
 
-                <SkillsCard card_title="Back-ends">
+                <SkillsCard :card_title="t('sections.skills.categories.backend')">
                     <img class="w-full sm:w-[75%] cursor-target"
                     src="../assets/img/logo/backend.png" 
-                    alt="Backend frameworks">
+                    :alt="t('sections.skills.alts.backend')">
                 </SkillsCard>
 
-                <SkillsCard card_title="Tools">
+                <SkillsCard :card_title="t('sections.skills.categories.tools')">
                     <img class="w-full sm:w-[75%] cursor-target"
                     src="../assets/img/logo/tools.png" 
-                    alt="Tools">
+                    :alt="t('sections.skills.alts.tools')">
                 </SkillsCard>
 
-                <SkillsCard card_title="Game dev and other">
+                <SkillsCard :card_title="t('sections.skills.categories.game_dev')">
                     <img class="w-full sm:w-[75%] cursor-target"
                     src="../assets/img/logo/other.png" 
-                    alt="Game dev and other">
+                    :alt="t('sections.skills.alts.game_dev')">
                 </SkillsCard>
                 
             </div>

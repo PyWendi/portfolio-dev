@@ -104,14 +104,14 @@ onUnmounted(() => {
 		
 			<!-- About Me -->
 			<div id="about" ref="aboutSection" :class="['section-animate', { 'section-visible': aboutVisible }]">
-				<LayoutSection title="About Me" :without_margin="true">
+				<LayoutSection :title="$t('sections.about.title')" :without_margin="true">
 					<AboutSection/>
 				</LayoutSection>
 			</div>
 		
 			<!-- Projects -->
 			<div id="projects" ref="projectsSection" :class="['section-animate', { 'section-visible': projectsVisible }]">
-				<LayoutSection title="Work and Projects">
+				<LayoutSection :title="$t('sections.projects.title')">
 					<div>
 						<WorkProjectSection/>
 					</div>
@@ -120,7 +120,7 @@ onUnmounted(() => {
 
 			<!-- Services -->
 			<div id="skills" ref="skillsSection" :class="['section-animate', { 'section-visible': skillsVisible }]">
-				<LayoutSection title="Skills">
+				<LayoutSection :title="$t('sections.skills.title')">
 					<div>
 						<SkillsSection/>
 					</div>
@@ -129,7 +129,7 @@ onUnmounted(() => {
 
 			<!-- Services -->
 			<div id="services" ref="servicesSection" :class="['section-animate', { 'section-visible': servicesVisible }]">
-				<LayoutSection title="Services">
+				<LayoutSection :title="$t('sections.services.title')">
 					<div>
 						<ServiceSection/>
 					</div>
@@ -138,7 +138,7 @@ onUnmounted(() => {
 		
 			<!-- Experience -->
 			<div id="extra" ref="extraSection" :class="['section-animate', { 'section-visible': extraVisible }]">
-				<LayoutSection title="Experiences and extra">
+				<LayoutSection :title="$t('sections.experiences.title')">
 					<div>
 						<ExtraSection/>
 					</div>
@@ -146,7 +146,7 @@ onUnmounted(() => {
 			</div>
 		
 			<div id="contact" ref="contactSection" :class="['section-animate', { 'section-visible': contactVisible }]">
-				<LayoutSection title="Contact" :without_margin="true">
+				<LayoutSection :title="$t('sections.contact.title')" :without_margin="true">
 					<div>
 						<!-- <SplashCursor/> -->
 						<ContactSection/>

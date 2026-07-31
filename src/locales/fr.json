@@ -1,0 +1,211 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "projects": "Projets",
+    "skills": "Compétences",
+    "services": "Services",
+    "experiences": "Expériences",
+    "contact": "Contact",
+    "resume": "CV",
+    "my_resume": "Mon CV"
+  },
+  "sections": {
+    "header": {
+      "salutation": "Salutation,",
+      "intro_prefix": "Je suis",
+      "role": "Développeur Fullstack",
+      "quote": "Passionné par le code, \nanimé par la curiosité, \net porté par la \npersévérance.",
+      "illustration_alt": "Illustration principale",
+      "links": {
+        "linkedin_tooltip": "Linkedin",
+        "github_tooltip": "Github",
+        "email_tooltip": "Adresse e-mail",
+        "facebook_tooltip": "Facebook",
+        "discord_tooltip": "Discord",
+        "itch_tooltip": "Itch.io"
+      }
+    },
+    "about": {
+      "title": "À propos de moi",
+      "p1": "Je suis un développeur web full-stack passionné qui adore donner vie à des idées grâce au code. Ce qui a commencé comme une simple curiosité est devenu une profonde passion pour la création, la résolution de problèmes et l'exploration de nouvelles technologies.",
+      "p2": "J'aime relever des défis ils me poussent à grandir et à concevoir des solutions plus intelligentes. Au-delà du développement web, je m'intéresse également au développement de jeux vidéo, où la créativité et la logique s'associent de manière fascinante.",
+      "p3": "Pour moi, coder n'est pas seulement un travail c'est un voyage d'apprentissage constant, de découverte et de création.",
+      "img_alt": "Image d'Anderson",
+      "decoration_alt": "Décoration de la section à propos"
+    },
+    "projects": {
+      "title": "Travaux et Projets",
+      "source": "Source",
+      "preview": "Aperçu",
+      "items": {
+        "portfolio": {
+          "title": "Portfolio Web",
+          "post": "Développeur Frontend",
+          "description": "Application web responsive et modulaire développée sur mesure avec Vue 3 et Tailwind CSS."
+        },
+        "pilote": {
+          "title": "Pilote360",
+          "post": "Développeur Fullstack et Chef de projet",
+          "description": "SaaS de gestion financière et d'optimisation de trésorerie."
+        },
+        "winedge": {
+          "title": "Winedge",
+          "post": "Développeur Fullstack",
+          "description": "Plateforme FinTech de micro-épargne et d'investissements automatisés."
+        },
+        "cloud": {
+          "title": "Cloud SOIBY",
+          "post": "Développeur Fullstack",
+          "description": "Plateforme d'hébergement cloud et de gestion d'infrastructure web (en cours de développement)."
+        },
+        "sco_app": {
+          "title": "SCO App",
+          "post": "Développeur Backend (Projet d'études)",
+          "description": "Application web conçue pour centraliser les dossiers étudiants et fluidifier les processus administratifs."
+        },
+        "kosher": {
+          "title": "NeedKOSHER",
+          "post": "Développeur Fullstack (Freelance)",
+          "description": "Plateforme web centralisée regroupant les services de voyage, d'événements et de restauration pour la communauté juive."
+        },
+        "finflow": {
+          "title": "UACEEM FinFlowImg",
+          "post": "Développeur Fullstack (Stage)",
+          "description": "Application web conçue pour numériser et suivre toutes les transactions financières de l'université."
+        },
+        "uaceem_site": {
+          "title": "Site web UACEEM v1",
+          "post": "Développeur Frontend (Stage)",
+          "description": "Conception et développement du site officiel (V1) de l'Université ACEEM."
+        },
+        "call_law": {
+          "title": "Call-Law",
+          "post": "Développeur Fullstack (Projet d'études)",
+          "description": "Plateforme de consultation juridique développée avec React Native (optimisée d'abord pour le web, ajustement mobile à venir)."
+        },
+        "mtp_urgence": {
+          "title": "MTP Urgence",
+          "post": "Développeur Fullstack",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut molestie interdum eros et elementum. Suspendisse potenti. Pellentesque non sodales mauris. Vivamus leo erat, consectetur eu convallis quis, hendrerit ut libero. Etiam varius eu nibh sollicitudin vestibulum."
+        }
+      }
+    },
+    "skills": {
+      "title": "Compétences",
+      "categories": {
+        "languages": "Langages de programmation",
+        "frontend": "Front-end",
+        "backend": "Back-end",
+        "tools": "Outils",
+        "game_dev": "Développement de jeux et autres"
+      },
+      "alts": {
+        "languages": "Langage de programmation",
+        "frontend": "Frameworks frontend",
+        "backend": "Frameworks backend",
+        "tools": "Outils",
+        "game_dev": "Développement de jeux et autres"
+      }
+    },
+    "services": {
+      "title": "Services",
+      "items": {
+        "web": {
+          "title": "Développement Web",
+          "description": "Création d'applications web complètes, performantes et évolutives."
+        },
+        "backend": {
+          "title": "ARCHITECTURE BACKEND & API",
+          "description": "Systèmes serveurs et API robustes, sécurisés et structurés."
+        },
+        "frontend": {
+          "title": "INTÉGRATION FRONTEND UI/UX",
+          "description": "Interfaces propres, modernes, réactives et centrées sur l'expérience utilisateur."
+        },
+        "database": {
+          "title": "CONCEPTION & OPTIMISATION DE BDD",
+          "description": "Modélisation et optimisation de bases de données fiables et performantes."
+        },
+        "game": {
+          "title": "DÉVELOPPEMENT DE JEUX",
+          "description": "Création d'expériences de jeu courtes mais mémorables."
+        }
+      }
+    },
+    "experiences": {
+      "title": "Expériences et extras",
+      "timeline": {
+        "pilote_cloud_winedger": {
+          "date": "Décembre 2025 - Mai 2026",
+          "title": "Pilote360, Cloud SOIBY, Winedger",
+          "content": "Refonte de l'architecture backend/frontend et automatisation des workflows pour les plateformes SaaS Pilote360, Cloud Soiby et Winedger."
+        },
+        "no_code_hackathon": {
+          "date": "Janvier - Février 2026",
+          "title": "Hackathon No-Code",
+          "content": "Accompagnement de 6 équipes dans le prototypage rapide d'interfaces avec Figma et des outils d'IA générative."
+        },
+        "game_up_africa": {
+          "date": "Septembre - Décembre 2025",
+          "title": "Bootcamp Game Up Africa",
+          "content": "Programme intensif spécialisé dans le développement de jeux avec le moteur Godot et les pipelines de production professionnels."
+        },
+        "sco_app": {
+          "date": "Novembre 2025",
+          "title": "Projet Académique — SCO APP",
+          "content": "Développement du backend d'une application de gestion de dossiers scolaires avec Next.js, Flask et PostgreSQL."
+        },
+        "need_kosher": {
+          "date": "Février - Juin 2025",
+          "title": "Freelance - Need Kosher",
+          "content": "Développement d'une application web full-stack centralisant les services touristiques, événementiels et de restauration casher avec Nuxt.js et Express.js."
+        },
+        "devgameeni_president": {
+          "date": "Janvier 2025 - Juin 2026",
+          "title": "Président du Club DevGameENI",
+          "content": "Animation de sessions de formation Unity et encadrement des membres du club lors de Game Jams régionales et nationales."
+        },
+        "gameload_gamejam": {
+          "date": "Avril - Mai 2025",
+          "title": "Double vainqueur de la Game Jam Gameload",
+          "content": "Coordination opérationnelle et logistique du club, menant à l'obtention de deux prix lors de la compétition."
+        },
+        "uaceem_finflow": {
+          "date": "Août - Novembre 2024",
+          "title": "UACEEM FinFlow (Stage)",
+          "content": "Numérisation des transactions financières de l'université via la conception et le développement d'une application web avec Laravel et Tailwind CSS."
+        },
+        "call_law": {
+          "date": "Juillet - Août 2024",
+          "title": "Call-Law (Projet solo)",
+          "content": "Conception et développement d'une application mobile de prise de rendez-vous pour avocats avec React Native, Django et PostgreSQL."
+        },
+        "dairy_sales": {
+          "date": "Avril - Mai 2024",
+          "title": "Simulation Vente de Lait & Paiement (équipe)",
+          "content": "Création des services serveurs et intégration des vues d'une application d'e-commerce avec simulation de flux de paiement."
+        },
+        "ministry_works": {
+          "date": "Septembre - Décembre 2023",
+          "title": "Stagiaire Développeur Web — Ministère des Travaux Publics",
+          "content": "Développement d'une application web en temps réel pour optimiser le suivi des chantiers d'urgence entre le bureau central et les directions régionales avec Laravel et Quasar."
+        }
+      }
+    },
+    "contact": {
+      "title": "Contact",
+      "get_in_touch": "Me contacter",
+      "p1": "N'hésitez pas à me contacter si vous souhaitez collaborer, discuter d'un projet ou simplement me dire bonjour. Je suis toujours ouvert aux nouvelles opportunités, aux idées passionnantes et aux conversations enrichissantes. Je vous répondrai dans les plus brefs délais.",
+      "email_label": "rakotondranaivogilbert21@gmail.com",
+      "whatsapp_label": "+261 34 79 424 28 (WhatsApp)"
+    },
+    "footer": {
+      "credits": "© 2025 — Conçu & développé avec 💛 par Anderson.",
+      "sunflower_alt": "Tournesol"
+    }
+  },
+  "common": {
+    "link_copied": "Lien copié"
+  }
+}

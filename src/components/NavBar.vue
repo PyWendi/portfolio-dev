@@ -1,8 +1,11 @@
 <script setup lang="ts">
 import { ref, type Ref, onMounted, onUnmounted } from "vue"
-import resumePDF from "@/assets/resume/Fullstack developer.pdf"
+import { useI18n } from 'vue-i18n'
+import resumeFR from "@/assets/resume/CV Anderson - developpeur fullstack.pdf"
+import resumeEN from "@/assets/resume/Fullstack developer.pdf"
 import CursorTarget from '@/components/CursorTarget.vue';
 
+const { t, locale } = useI18n()
 const isMenuOpen: Ref<Boolean> = ref(false)
 const isHeaderVisible: Ref<boolean> = ref(true)
 let lastScrollY: number = 0
@@ -11,10 +14,16 @@ const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value
 }
 
+const changeLanguage = (lang: string) => {
+  locale.value = lang
+  localStorage.setItem('user-locale', lang)
+}
+
 const downloadResume = () => {
     const link = document.createElement('a')
-    link.href = resumePDF
-    link.download = 'Fullstack developer.pdf'
+    const isFr = locale.value === 'fr'
+    link.href = isFr ? resumeFR : resumeEN
+    link.download = isFr ? 'CV Anderson - developpeur fullstack.pdf' : 'Fullstack developer.pdf'
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
@@ -65,29 +74,43 @@ onUnmounted(() => {
                text-white rounded-full bg-[#4ade809e] 
                px-5 py-2 sm:px-8 sm:py-3 shadow-[0_0_10px_#36738d]">
         <li class="hover:text-green-200 transition-all duration-300 cursor-pointer cursor-target">
-            <a href="#home">Home</a> </li>
+            <a href="#home">{{ t('nav.home') }}</a> </li>
         <li class="hover:text-green-200 transition-all duration-300 cursor-pointer cursor-target">
-            <a href="#about">About</a> </li>
+            <a href="#about">{{ t('nav.about') }}</a> </li>
         <li class="hover:text-green-200 transition-all duration-300 cursor-pointer cursor-target">
-            <a href="#projects">Projects</a> </li>
+            <a href="#projects">{{ t('nav.projects') }}</a> </li>
         <li class="hover:text-green-200 transition-all duration-300 cursor-pointer cursor-target">
-            <a href="#skills">Skills</a> </li>
+            <a href="#skills">{{ t('nav.skills') }}</a> </li>
         <li class="hover:text-green-200 transition-all duration-300 cursor-pointer cursor-target">
-            <a href="#services">Services</a> </li>
+            <a href="#services">{{ t('nav.services') }}</a> </li>
       <li class="hover:text-green-200 transition-all duration-300 cursor-pointer cursor-target">
-            <a href="#extra">Experiences</a> </li>
+            <a href="#extra">{{ t('nav.experiences') }}</a> </li>
         <li class="hover:text-green-200 transition-all duration-300 cursor-pointer cursor-target">
-            <a href="#contact">Contact</a> </li>
+            <a href="#contact">{{ t('nav.contact') }}</a> </li>
       </ul>
     </div>
 
     <!-- Page resume (desktop only) -->
-    <div class="hidden lg:block">
+    <div class="hidden lg:flex items-center gap-4">
+      <!-- Langue switcher -->
+      <div class="flex items-center gap-2 border border-white/20 rounded-full px-2 py-1 bg-black/20 backdrop-blur-sm">
+        <button 
+          @click="changeLanguage('fr')" 
+          :class="['text-[12px] px-2 py-0.5 rounded-full transition-all duration-300 cursor-target', locale === 'fr' ? 'bg-green-400 text-black font-semibold' : 'text-white hover:text-green-200']">
+          FR
+        </button>
+        <button 
+          @click="changeLanguage('en')" 
+          :class="['text-[12px] px-2 py-0.5 rounded-full transition-all duration-300 cursor-target', locale === 'en' ? 'bg-green-400 text-black font-semibold' : 'text-white hover:text-green-200']">
+          EN
+        </button>
+      </div>
+
       <button
         @click="downloadResume"
         class="flex items-center gap-2 border-2 border-white rounded-full py-1.5 px-4 sm:py-1.5 sm:px-6
                duration-300 hover:bg-[#ffffff39] cursor-target">
-        <span class="text-white text-[14px] sm:text-[16px] lg:text-[14px] xl:text-[16px]">Resume</span>
+        <span class="text-white text-[14px] sm:text-[16px] lg:text-[14px] xl:text-[16px]">{{ t('nav.resume') }}</span>
         <span>
           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 24 24"
             fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" 
@@ -101,7 +124,21 @@ onUnmounted(() => {
     </div>
 
     <!-- Menu mobile (burger button) -->
-    <div class="lg:hidden">
+    <div class="lg:hidden flex items-center gap-4">
+      <!-- Langue switcher mobile header -->
+      <div class="flex items-center gap-1 border border-white/20 rounded-full px-2 py-0.5 bg-black/20 backdrop-blur-sm">
+        <button 
+          @click="changeLanguage('fr')" 
+          :class="['text-[11px] px-1.5 py-0.5 rounded-full transition-all duration-300', locale === 'fr' ? 'bg-green-400 text-black font-semibold' : 'text-white']">
+          FR
+        </button>
+        <button 
+          @click="changeLanguage('en')" 
+          :class="['text-[11px] px-1.5 py-0.5 rounded-full transition-all duration-300', locale === 'en' ? 'bg-green-400 text-black font-semibold' : 'text-white']">
+          EN
+        </button>
+      </div>
+
       <button @click="toggleMenu" class="text-white text-[24px] hover:scale-105 transition">
         <!-- Si tu veux une icône cross quand ouvert, tu peux faire une condition ici -->
         {{ isMenuOpen ? '✖' : '☰' }}
@@ -116,19 +153,19 @@ onUnmounted(() => {
                     py-4 px-8 flex flex-col gap-4 text-white right-0
                     text-[16px] font-medium">
             <li @click="isMenuOpen = false" class="hover:text-green-200 cursor-target cursor-pointer">
-                <a href="#home">Home</a></li>
+                <a href="#home">{{ t('nav.home') }}</a></li>
             <li @click="isMenuOpen = false" class="hover:text-green-200 cursor-target cursor-pointer">
-                <a href="#about">About</a></li>
+                <a href="#about">{{ t('nav.about') }}</a></li>
             <li @click="isMenuOpen = false" class="hover:text-green-200 cursor-target cursor-pointer">
-                <a href="#projects">Projects</a></li>
+                <a href="#projects">{{ t('nav.projects') }}</a></li>
             <li @click="isMenuOpen = false" class="hover:text-green-200 cursor-target cursor-pointer">
-                <a href="#skills">Skills</a></li>
+                <a href="#skills">{{ t('nav.skills') }}</a></li>
             <li @click="isMenuOpen = false" class="hover:text-green-200 cursor-target cursor-pointer">
-                <a href="#services">Services</a></li>
+                <a href="#services">{{ t('nav.services') }}</a></li>
             <li @click="isMenuOpen = false" class="hover:text-green-200 cursor-target cursor-pointer">
-                <a href="#extra">Extra</a></li>
+                <a href="#extra">{{ t('nav.experiences') }}</a></li>
             <li @click="isMenuOpen = false" class="hover:text-green-200 cursor-target cursor-pointer">
-                <a href="#contact">Contact</a></li>
+                <a href="#contact">{{ t('nav.contact') }}</a></li>
 
             <!-- Resume -->
             <li class="pt-5 border-t border-white/40 mt-2 flex justify-center">
@@ -136,7 +173,7 @@ onUnmounted(() => {
                 @click="downloadResume"
                 class="w-1/2 flex items-center justify-center gap-2 border-2 border-white rounded-full py-2
                 duration-300 hover:bg-[#ffffff39]">
-                <span class="text-white text-[16px] ">My Resume</span>
+                <span class="text-white text-[16px] ">{{ t('nav.my_resume') }}</span>
                 <span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 24 24"
                     fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" 

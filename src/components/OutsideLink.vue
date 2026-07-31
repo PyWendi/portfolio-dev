@@ -1,8 +1,9 @@
 <script lang="ts" setup>
 import type { OutsideLinkProps } from '@/types/types';
-// import { ref, defineProps } from 'vue';
 import { ref } from 'vue';
+import { useI18n } from 'vue-i18n';
 
+const { t } = useI18n()
 const {
     link, 
     is_link_to_copy, 
@@ -50,7 +51,7 @@ const toggleFalseTooltip = () => {
                 'opacity-100 translate-y-0' : showNotification
             }"
             >
-                Link copied
+                {{ t('common.link_copied') }}
             </div>
 
             <!-- SVG -->

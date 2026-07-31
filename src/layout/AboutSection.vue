@@ -1,4 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n()
+</script>
 
 <template>
     <div class="relative">
@@ -26,25 +29,21 @@
         items-center justify-center gap-16">
             <!-- Text about me -->
             <div class="w-full md:w-[60%] text-[15px] md:text-[16px] lg:text-[20px] text-justify">
-                I’m a passionate full-stack web developer who loves turning ideas into reality through code. 
-                What started as simple curiosity became a deep passion for building, solving problems, and exploring new technologies. <br> <br>
-
-                I thrive on challenges — they push me to grow and create smarter solutions. Beyond web development, 
-                I’m also diving into game development, where creativity and logic come together in fascinating ways. <br> <br></br>
-
-                For me, coding isn’t just a job — it’s a journey of constant learning, discovery, and creation.
+                {{ t('sections.about.p1') }} <br> <br>
+                {{ t('sections.about.p2') }} <br> <br>
+                {{ t('sections.about.p3') }}
             </div>
     
             <!-- Image -->
             <img 
             class="w-[50%] md:[22%] lg:w-[20%]" 
-            src="../assets/img/about_img.png" alt="Anderson's image">
+            src="../assets/img/about_img.png" :alt="t('sections.about.img_alt')">
         </div>
 
         <!-- Image decoration -->
         <div>
             <img 
-            src="../assets/img/low_wave.svg" alt="About decoration">
+            src="../assets/img/low_wave.svg" :alt="t('sections.about.decoration_alt')">
         </div>
 
     </div>

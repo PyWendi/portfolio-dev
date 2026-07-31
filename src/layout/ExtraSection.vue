@@ -1,20 +1,67 @@
 <script setup lang="ts">
+import { computed } from 'vue';
+import { useI18n } from 'vue-i18n';
 import AnimatedList from '@/components/AnimatedList.vue';
 
-const timelineData = [
-  { date: "December 2025 - May 2026", content: "Led backend/frontend architecture redesigns and automated workflows for Pilote360, Cloud Soiby, and Winedger SaaS platforms.", title: "Pilote360, Cloud SOIBY, Winedger" },
-  { date: "January - February 2026", content: "Mentored 6 teams in rapid UI prototyping using Figma and generative AI tools to accelerate deliverable production.", title: "No-Code Hackathon" },
-  { date: "September - December 2025", content: "Completed an intensive program specializing in Godot engine game development and professional production pipelines.", title: "Game Up Africa Bootcamp" },
-  { date: "November 2025", content: "Built the backend for a student administrative record management application using Next.js, Flask, and PostgreSQL.", title: "Educational Project — SCO APP" },
-  { date: "February - June 2025", content: "Developed a full-stack web application centralizing travel, events, and catering services for the Jewish community using Nuxt.js and Express.js.", title: "Freelance - Need Kosher" },
+const { t } = useI18n()
 
-  { date: "January 2025 - June 2026", content: "Led Unity training sessions and supervised club members during regional and national Game Jam competitions.", title: "DevGameENI Club President" },
-  { date: "April - May 2025", content: "Coordinated club operations and logistics, leading teams to secure two competition awards.", title: "Gameload Game Jam Double Award Winner" },
-  { date: "August - November 2024", content: "Digitized all university financial transactions by designing and implementing a web application with Laravel and Tailwind CSS.Complete and scalable web application development.", title: "UACEEM FinFlow (Internship)" },
-  { date: "July - August 2024", content: "Designed and developed a mobile appointment-booking app for lawyers using React Native, Django, and PostgreSQL.", title: "Call-Law (solo project)" },
-  { date: "April - May 2024", content: "Built backend services and integrated UI components for a dairy e-commerce app with payment flow simulation.", title: "Dairy Sales & Payment Simulation (team)" },
-  { date: "Sptember - December 2023", content: "Developed a real-time web application to streamline emergency work monitoring across central and regional offices using Laravel and Quasar.", title: "Web Developer Intern — Ministry of Public Works" },
-];
+const timelineData = computed(() => [
+  { 
+    date: t('sections.experiences.timeline.pilote_cloud_winedger.date'), 
+    title: t('sections.experiences.timeline.pilote_cloud_winedger.title'), 
+    content: t('sections.experiences.timeline.pilote_cloud_winedger.content') 
+  },
+  { 
+    date: t('sections.experiences.timeline.no_code_hackathon.date'), 
+    title: t('sections.experiences.timeline.no_code_hackathon.title'), 
+    content: t('sections.experiences.timeline.no_code_hackathon.content') 
+  },
+  { 
+    date: t('sections.experiences.timeline.game_up_africa.date'), 
+    title: t('sections.experiences.timeline.game_up_africa.title'), 
+    content: t('sections.experiences.timeline.game_up_africa.content') 
+  },
+  { 
+    date: t('sections.experiences.timeline.sco_app.date'), 
+    title: t('sections.experiences.timeline.sco_app.title'), 
+    content: t('sections.experiences.timeline.sco_app.content') 
+  },
+  { 
+    date: t('sections.experiences.timeline.need_kosher.date'), 
+    title: t('sections.experiences.timeline.need_kosher.title'), 
+    content: t('sections.experiences.timeline.need_kosher.content') 
+  },
+  { 
+    date: t('sections.experiences.timeline.devgameeni_president.date'), 
+    title: t('sections.experiences.timeline.devgameeni_president.title'), 
+    content: t('sections.experiences.timeline.devgameeni_president.content') 
+  },
+  { 
+    date: t('sections.experiences.timeline.gameload_gamejam.date'), 
+    title: t('sections.experiences.timeline.gameload_gamejam.title'), 
+    content: t('sections.experiences.timeline.gameload_gamejam.content') 
+  },
+  { 
+    date: t('sections.experiences.timeline.uaceem_finflow.date'), 
+    title: t('sections.experiences.timeline.uaceem_finflow.title'), 
+    content: t('sections.experiences.timeline.uaceem_finflow.content') 
+  },
+  { 
+    date: t('sections.experiences.timeline.call_law.date'), 
+    title: t('sections.experiences.timeline.call_law.title'), 
+    content: t('sections.experiences.timeline.call_law.content') 
+  },
+  { 
+    date: t('sections.experiences.timeline.dairy_sales.date'), 
+    title: t('sections.experiences.timeline.dairy_sales.title'), 
+    content: t('sections.experiences.timeline.dairy_sales.content') 
+  },
+  { 
+    date: t('sections.experiences.timeline.ministry_works.date'), 
+    title: t('sections.experiences.timeline.ministry_works.title'), 
+    content: t('sections.experiences.timeline.ministry_works.content') 
+  },
+]);
 </script>
 
 <template>

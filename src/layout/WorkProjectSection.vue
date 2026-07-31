@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { computed } from 'vue';
+import { useI18n } from 'vue-i18n';
 import ProjectCard from '@/components/ProjectCard.vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
@@ -18,13 +20,14 @@ import mtpUrgencyImg from '../assets/img/projects/mtp-urgency.png';
 import callLawImg from '../assets/img/projects/call-law.png';
 import uaccemSiteImg from '../assets/img/projects/uaccem-website.png';
 
+const { t } = useI18n()
 
 // image: new URL('../assets/img/projects/sco_app.jpg', import.meta.url).href,
-const projects = [
+const projects = computed(() => [
     {
-        project_title: "Web Portfolio",
-        post: "Frontend Developer",
-        description: `Responsive and modular web application custom-built with Vue 3 and Tailwind CSS.`,
+        project_title: t('sections.projects.items.portfolio.title'),
+        post: t('sections.projects.items.portfolio.post'),
+        description: t('sections.projects.items.portfolio.description'),
         technos: ['Vue.js', 'Tailwind CSS'],
         source_url: "https://github.com/PyWendi/portfolio-dev",
         preview_url: "https://pilote360.io/",
@@ -33,9 +36,9 @@ const projects = [
         with_preview: true
     },
     {
-        project_title: "Pilote360",
-        post: "Fullstack Developer and Project Manager",
-        description: `Financial management and treasury optimization SaaS platform.`,
+        project_title: t('sections.projects.items.pilote.title'),
+        post: t('sections.projects.items.pilote.post'),
+        description: t('sections.projects.items.pilote.description'),
         technos: ['FastAPI', 'React.js', 'MongoDB', 'Tailwind CSS', 'AI-Assisted Developement', 'N8N'],
         source_url: "",
         preview_url: "https://pilote360.io/",
@@ -44,9 +47,9 @@ const projects = [
         with_preview: true
     },
     {
-        project_title: "Winedge",
-        post: "Fullstack Developer",
-        description: `FinTech platform for effortless micro-savings and automated personal investments.`,
+        project_title: t('sections.projects.items.winedge.title'),
+        post: t('sections.projects.items.winedge.post'),
+        description: t('sections.projects.items.winedge.description'),
         technos: ['FastAPI', 'Next.js', 'MongoDB', 'Tailwind CSS', 'AI-Assisted Developement', 'N8N'],
         source_url: "",
         preview_url: "https://winedge.io",
@@ -55,9 +58,9 @@ const projects = [
         with_preview: true
     },
     {
-        project_title: "Cloud SOIBY",
-        post: "Fullstack Developer",
-        description: `Cloud hosting and web infrastructure management platform (under active development).`,
+        project_title: t('sections.projects.items.cloud.title'),
+        post: t('sections.projects.items.cloud.post'),
+        description: t('sections.projects.items.cloud.description'),
         technos: ['FastAPI', 'React.js', 'PostgreSQL', 'Tailwind CSS', 'AI-Assisted Developement', 'N8N'],
         source_url: "",
         preview_url: "",
@@ -66,9 +69,9 @@ const projects = [
         with_preview: false
     },
     {
-        project_title: "SCO App",
-        post: "Backend developer (School project)",
-        description: `Web application designed for centralizing student records and streamlining administrative workflows.`,
+        project_title: t('sections.projects.items.sco_app.title'),
+        post: t('sections.projects.items.sco_app.post'),
+        description: t('sections.projects.items.sco_app.description'),
         technos: ['FastAPI', 'Ably', 'Next.js', 'PostgreSQL', 'Tailwind CSS'],
         source_url: "",
         preview_url: "",
@@ -77,9 +80,9 @@ const projects = [
         with_preview: false
     },
     {
-        project_title: "NeedKOSHER",
-        post: "Fullstack developer (Freelancing)",
-        description: `Centralized web platform aggregating travel, events, and catering services for the Jewish community.`,
+        project_title: t('sections.projects.items.kosher.title'),
+        post: t('sections.projects.items.kosher.post'),
+        description: t('sections.projects.items.kosher.description'),
         technos: ['Nuxt', 'Tailwind CSS', 'Express.js', 'MySQL'],
         source_url: "",
         preview_url: "https://web.koshergate.com",
@@ -88,9 +91,9 @@ const projects = [
         with_preview: true
     },
     {
-        project_title: "UACEEM FinFlowImg",
-        post: "Fullstack developer (internship)",
-        description: `Web application designed to digitize and track all financial transactions across the university.`,
+        project_title: t('sections.projects.items.finflow.title'),
+        post: t('sections.projects.items.finflow.post'),
+        description: t('sections.projects.items.finflow.description'),
         technos: ['Laravel', 'Tailwind CSS', 'Blade', 'MySQL'],
         source_url: "",
         preview_url: "",
@@ -99,9 +102,9 @@ const projects = [
         with_preview: false
     },
     {
-        project_title: "UACEEM website v1",
-        post: "Frontend developer (internship)",
-        description: `Design and development of the official website (V1) for ACEEM University.`,
+        project_title: t('sections.projects.items.uaceem_site.title'),
+        post: t('sections.projects.items.uaceem_site.post'),
+        description: t('sections.projects.items.uaceem_site.description'),
         technos: ['HTML', 'CSS', 'Javascrypt'],
         source_url: "",
         preview_url: "",
@@ -109,13 +112,10 @@ const projects = [
         with_source: false,
         with_preview: false
     },
-
-    // Call law
-    // Socolait
     {
-        project_title: "Call-Law",
-        post: "Fullstack Developer (School project)",
-        description: `Legal consultation platform built with React Native (responsive web-first, mobile layout fine-tuning upcoming).`,
+        project_title: t('sections.projects.items.call_law.title'),
+        post: t('sections.projects.items.call_law.post'),
+        description: t('sections.projects.items.call_law.description'),
         technos: ['Django', 'React Native', 'PostgreSQL', 'Tailwind CSS'],
         source_url: "",
         preview_url: "",
@@ -123,31 +123,10 @@ const projects = [
         with_source: false,
         with_preview: false
     },
-    // {
-    //     project_title: "Socolait (School project)",
-    //     post: "Backend developer, Integrator",
-    //     description: `Lorem ipsum dolor sit amet, 
-    //     consectetur adipiscing elit. Ut molestie interdum eros 
-    //     et elementum. Suspendisse potenti. 
-    //     Pellentesque non sodales mauris. Vivamus leo erat, 
-    //     consectetur eu convallis quis, hendrerit ut libero. 
-    //     Etiam varius eu nibh sollicitudin vestibulum.`,
-    //     technos: ['React.js', 'Django', 'PostgreSQL', 'Tailwind CSS'],
-    //     source_url: "",
-    //     preview_url: "",
-    //     image: scoAppImg,
-    //     with_source: false,
-    //     with_preview: false
-    // },
     {
-        project_title: "MTP Urgence",
-        post: "Fullstack",
-        description: `Lorem ipsum dolor sit amet, 
-        consectetur adipiscing elit. Ut molestie interdum eros 
-        et elementum. Suspendisse potenti. 
-        Pellentesque non sodales mauris. Vivamus leo erat, 
-        consectetur eu convallis quis, hendrerit ut libero. 
-        Etiam varius eu nibh sollicitudin vestibulum.`,
+        project_title: t('sections.projects.items.mtp_urgence.title'),
+        post: t('sections.projects.items.mtp_urgence.post'),
+        description: t('sections.projects.items.mtp_urgence.description'),
         technos: ['Quasar', 'Laravel', 'PostgreSQL'],
         source_url: "",
         preview_url: "",
@@ -155,8 +134,7 @@ const projects = [
         with_source: false,
         with_preview: false
     },
-    // MTP
-];
+]);
 </script>
 
 <template>
