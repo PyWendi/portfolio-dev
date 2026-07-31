@@ -21,7 +21,7 @@ const { t } = useI18n()
          md:w-[200px] md:h-[200px] md:top-[550px] md:left-[80%]
          sm:w-[300px] sm:h-[300px] sm:top-[600px] sm:left-[80%]
          xs:w-[300px] xs:h-[300px] xs:top-[500px] xs:left-[80%]
-         w-[250px] h-[250px] top-[600px] left-[85%]
+         w-[250px] h-[250px] top-[600px] left-[40%]
          ">
         </div>
 

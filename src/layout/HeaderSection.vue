@@ -15,7 +15,7 @@ const { t } = useI18n()
          md:w-[300px] md:h-[300px] md:top-16 md:left-[55%]
          sm:w-[500px] sm:h-[500px] sm:top-4 sm:left-[15%]
          xs:w-[550px] xs:h-[550px] xs:top-4 xs:left-[17%]
-         w-[450px] h-[450px] top-4 left-[17%]
+         w-[450px] h-[450px] top-[-70px] left-[-20%]
          ">rakotondranaivogilbert21@gmail.com
         </div>
 

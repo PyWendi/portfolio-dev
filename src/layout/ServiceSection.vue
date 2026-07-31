@@ -17,7 +17,7 @@ const { t } = useI18n()
                     :service_title="t('sections.services.items.web.title')"
                     :service_description="t('sections.services.items.web.description')"
                     >
-                        <img class="w-[80px] h-[80px] md:w-[100px] md:h-[100px]"
+                        <img class="w-[60px] h-[60px] md:w-[100px] md:h-[100px]"
                         src="../assets/img/service_web.png" :alt="t('sections.services.items.web.title')">
                     </ServiceCard>
                 </SpotlightCard>
@@ -29,7 +29,7 @@ const { t } = useI18n()
                     :service_title="t('sections.services.items.backend.title')"
                     :service_description="t('sections.services.items.backend.description')"
                     >
-                        <img class="w-[80px] h-[80px] md:w-[100px] md:h-[100px]"
+                        <img class="w-[60px] h-[60px] md:w-[100px] md:h-[100px]"
                         src="../assets/img/service_back.png" :alt="t('sections.services.items.backend.title')">
                     </ServiceCard>
                 </SpotlightCard>
@@ -41,7 +41,7 @@ const { t } = useI18n()
                     :service_title="t('sections.services.items.frontend.title')"
                     :service_description="t('sections.services.items.frontend.description')"
                     >
-                        <img class="w-[80px] h-[80px] md:w-[100px] md:h-[100px]"
+                        <img class="w-[60px] h-[60px] md:w-[100px] md:h-[100px]"
                         src="../assets/img/service_front.png" :alt="t('sections.services.items.frontend.title')">
                     </ServiceCard>
                 </SpotlightCard>
@@ -56,7 +56,7 @@ const { t } = useI18n()
                     :service_title="t('sections.services.items.database.title')"
                     :service_description="t('sections.services.items.database.description')"
                     >
-                        <img class="w-[80px] h-[80px] md:w-[100px] md:h-[100px]"
+                        <img class="w-[60px] h-[60px] md:w-[100px] md:h-[100px]"
                         src="../assets/img/service_db.png" :alt="t('sections.services.items.database.title')">
                     </ServiceCard>
                 </SpotlightCard>
@@ -68,7 +68,7 @@ const { t } = useI18n()
                     :service_title="t('sections.services.items.game.title')"
                     :service_description="t('sections.services.items.game.description')"
                     >
-                        <img class="w-[80px] h-[80px] md:w-[100px] md:h-[100px]"
+                        <img class="w-[60px] h-[60px] md:w-[100px] md:h-[100px]"
                         src="../assets/img/service_game.png" :alt="t('sections.services.items.game.title')">
                     </ServiceCard>
                 </SpotlightCard>

@@ -94,7 +94,8 @@ onUnmounted(() => {
 			:parallax-on="true"
 		/>
 
-		<div class="relative ">
+		<!-- <div class="relative overflow-hidden"> -->
+		<div class="relative">
 			<NavBar/>
 		
 			<!-- Home -->

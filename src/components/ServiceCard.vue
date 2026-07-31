@@ -11,7 +11,7 @@ const {
 </script>
 
 <template>
-    <div class="w-[300px] h-[350px]
+    <div class="w-[200px] md:w-[300px] h-[350px]
     flex flex-col justify-center items-center
     border-2 border-green-400 rounded-md bg-[#4ade8020]/5 px-2
     ">
