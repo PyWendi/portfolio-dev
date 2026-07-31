@@ -18,9 +18,9 @@ const { t } = useI18n()
         <div class="absolute  bg-[#40bd6e7d] rounded-full blur-[130px] z-[-10]
          xl:w-[450px] xl:h-[450px] xl:top-[450px] xl:left-[80%]
          lg:w-[300px] lg:h-[300px] lg:top-[450px] lg:left-[80%]
-         md:w-[200px] md:h-[200px] md:top-[550px] md:left-[80%]
-         sm:w-[300px] sm:h-[300px] sm:top-[600px] sm:left-[80%]
-         xs:w-[300px] xs:h-[300px] xs:top-[500px] xs:left-[80%]
+         md:w-[200px] md:h-[200px] md:top-[550px] md:left-[40%]
+         sm:w-[300px] sm:h-[300px] sm:top-[600px] sm:left-[40%]
+         xs:w-[300px] xs:h-[300px] xs:top-[500px] xs:left-[40%]
          w-[200px] h-[200px] top-[600px] left-[40%]
          ">
         </div>
