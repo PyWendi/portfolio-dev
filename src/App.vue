@@ -118,12 +118,12 @@ onUnmounted(() => {
 					</div>
 				</LayoutSection>
 			</div>
-
-			<!-- Services -->
-			<div id="skills" ref="skillsSection" :class="['section-animate', { 'section-visible': skillsVisible }]">
-				<LayoutSection :title="$t('sections.skills.title')">
+		
+			<!-- Experience -->
+			<div id="extra" ref="extraSection" :class="['section-animate', { 'section-visible': extraVisible }]">
+				<LayoutSection :title="$t('sections.experiences.title')">
 					<div>
-						<SkillsSection/>
+						<ExtraSection/>
 					</div>
 				</LayoutSection>
 			</div>
@@ -136,12 +136,12 @@ onUnmounted(() => {
 					</div>
 				</LayoutSection>
 			</div>
-		
-			<!-- Experience -->
-			<div id="extra" ref="extraSection" :class="['section-animate', { 'section-visible': extraVisible }]">
-				<LayoutSection :title="$t('sections.experiences.title')">
+
+			<!-- Services -->
+			<div id="skills" ref="skillsSection" :class="['section-animate', { 'section-visible': skillsVisible }]">
+				<LayoutSection :title="$t('sections.skills.title')">
 					<div>
-						<ExtraSection/>
+						<SkillsSection/>
 					</div>
 				</LayoutSection>
 			</div>

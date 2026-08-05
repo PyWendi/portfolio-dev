@@ -87,7 +87,7 @@
         "mtp_urgence": {
           "title": "MTP Urgence",
           "post": "Développeur Fullstack",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut molestie interdum eros et elementum. Suspendisse potenti. Pellentesque non sodales mauris. Vivamus leo erat, consectetur eu convallis quis, hendrerit ut libero. Etiam varius eu nibh sollicitudin vestibulum."
+          "description": "Application web de suivi en temps réel et de centralisation des travaux d'urgence à l'échelle nationale et régionale."
         }
       }
     },

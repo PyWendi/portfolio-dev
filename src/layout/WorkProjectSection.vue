@@ -30,7 +30,7 @@ const projects = computed(() => [
         description: t('sections.projects.items.portfolio.description'),
         technos: ['Vue.js', 'Tailwind CSS'],
         source_url: "https://github.com/PyWendi/portfolio-dev",
-        preview_url: "https://pilote360.io/",
+        preview_url: "https://andersons-portfolio.netlify.app/",
         image: portfolioImg,
         with_source: true,
         with_preview: true
