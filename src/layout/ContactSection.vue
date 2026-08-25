@@ -3,6 +3,7 @@ import OutsideLink from '@/components/OutsideLink.vue';
 import sunflowerImg from "../assets/img/sunflower.png";
 import ScrollFloat from '@/components/ScrollFloat.vue';
 import { useI18n } from 'vue-i18n';
+import OpenToWork from '@/components/OpenToWor.vue';
 
 const { t } = useI18n()
 </script>
@@ -13,7 +14,7 @@ const { t } = useI18n()
         <div class="px-8">
             <!-- Big text -->
            
-                <div class="flex items-center justify-center md:justify-start">
+                <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start">
                     <!-- Version mobile/tablette (avec animation) -->
                     <div class="hidden sm:block">
                         <ScrollFloat
@@ -32,7 +33,9 @@ const { t } = useI18n()
                         {{ t('sections.contact.get_in_touch') }}
                     </div>
 
-                    <span class="hidden sm:block ml-8 md:ml-16 w-[50px] md:w-[100px] border-2 md:border-4 border-green-400 bg-green-400"></span>
+
+                    <OpenToWork class="ml-4 mt-4 sm:mt-0"/>
+                    <!-- <span class="hidden sm:block ml-8 md:ml-16 w-[50px] md:w-[100px] border-2 md:border-4 border-green-400 bg-green-400"></span> -->
                 </div>
             
     

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import OutsideLink from '@/components/OutsideLink.vue';
 import ShinyText from '@/components/ShinyText.vue';
+import OpenToWork from '@/components/OpenToWor.vue';
 import { useI18n } from 'vue-i18n';
 
 const { t } = useI18n()
@@ -43,6 +44,7 @@ const { t } = useI18n()
                         :yoyo="false"
                         :pause-on-hover="false"
                     />
+                    <OpenToWork/>
                 </div>
 
                 <div class="text-[17px] sm:text-[17px] md:text-[20px] lg:text-[30px] xl:text-[40px] whitespace-pre-line">

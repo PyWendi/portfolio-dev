@@ -15,6 +15,7 @@
       "salutation": "Salutation,",
       "intro_prefix": "I'm",
       "role": "Fullstack Developer",
+      "open_to_work": "Open to work",
       "quote": "Passionate about coding, \ndriven by curiosity, \nand powered by \nperseverance.",
       "illustration_alt": "Main illustration",
       "links": {
@@ -42,52 +43,87 @@
         "portfolio": {
           "title": "Web Portfolio",
           "post": "Frontend Developer",
-          "description": "Responsive and modular web application custom-built with Vue 3 and Tailwind CSS."
+          "description": [
+            "Custom-built responsive web application designed to showcase my projects, skills, and experience."
+          ]
         },
         "pilote": {
           "title": "Pilote360",
           "post": "Fullstack Developer and Project Manager",
-          "description": "Financial management and treasury optimization SaaS platform."
+          "description": [
+            "Design of a SaaS platform enabling centralization, visualization, and strategic analysis of finances for businesses and individuals.",
+            "Development of interactive decision tools and integration of invoice and trial management systems.",
+            "Implementation of automations via n8n for customer notifications and financial process management."
+          ]
         },
         "winedge": {
           "title": "Winedge",
           "post": "Fullstack Developer",
-          "description": "FinTech platform for effortless micro-savings and automated personal investments."
+          "description": [
+            "Design of a FinTech solution for silent savings calculated automatically on daily transaction round-ups.",
+            "Development of real-time conversion system for saved amounts into crypto-assets.",
+            "Implementation of user account registry and tracking of allocated balances.",
+            "Automation of email scenarios and notifications via n8n."
+          ]
         },
         "cloud": {
           "title": "Cloud SOIBY",
           "post": "Fullstack Developer",
-          "description": "Cloud hosting and web infrastructure management platform (under active development)."
+          "description": [
+            "Cloud hosting and web infrastructure management platform (under active development).",
+            "Implementation of the offer management engine, subscription models, and automatic plan renewal."
+          ]
         },
         "sco_app": {
           "title": "SCO App",
           "post": "Backend developer (School project)",
-          "description": "Web application designed for centralizing student records and streamlining administrative workflows."
+          "description": [
+            "Design and development of a centralized web application enabling the administration to optimize tracking and processing of student records.",
+            "Implementation of a robust API with Flask, PostgreSQL database management, and integration of Ably service for real-time notifications and stream management."
+          ]
         },
         "kosher": {
           "title": "NeedKOSHER",
           "post": "Fullstack developer (Freelancing)",
-          "description": "Centralized web platform aggregating travel, events, and catering services for the Jewish community."
+          "description": [
+            "Design and production of a multi-service web application aimed at strengthening interactions and service sharing within the community.",
+            "Integration of interaction modules covering event management, travel, catering, and community mutual aid.",
+            "Development of a reactive frontend interface with Nuxt.js coupled with a REST API under Express.js, Sequelize, and MySQL."
+          ]
         },
         "finflow": {
           "title": "UACEEM FinFlowImg",
           "post": "Fullstack developer (internship)",
-          "description": "Web application designed to digitize and track all financial transactions across the university."
+          "description": [
+            "Design and implementation of the university's central financial management module, covering the student registration through to analytical tracking of internal flows.",
+            "Implementation of the transaction engine for various operations and creation of financial dashboards for real-time visualization and reporting.",
+            "Technical mentoring of interns on the project, assistance with architecture design, and management of GitHub branch strategy."
+          ]
         },
         "uaceem_site": {
           "title": "UACEEM website v1",
           "post": "Frontend developer (internship)",
-          "description": "Design and development of the official website (V1) for ACEEM University."
+          "description": [
+            "Design and development of the official website (V1) for ACEEM University."
+          ]
         },
         "call_law": {
           "title": "Call-Law",
           "post": "Fullstack Developer (School project)",
-          "description": "Legal consultation platform built with React Native (responsive web-first, mobile layout fine-tuning upcoming)."
+          "description": [
+            "Design and development of a mobile application enabling connections between clients and lawyers for legal consultation management.",
+            "Integration of a fluid mobile interface developed with React Native (TypeScript) connected to a REST API under Django.",
+            "Implementation of the slot planning system, request tracking, and appointment status monitoring."
+          ]
         },
         "mtp_urgence": {
           "title": "MTP Urgence",
           "post": "Fullstack",
-          "description": "Real-time web application for tracking and centralizing emergency public works across central and regional offices."
+          "description": [
+            "Design and development of a web application aimed at streamlining control and centralizing the sharing of emergency data between central and regional services.",
+            "Implementation of the incident qualification system, automatic assignment of responsible parties, and real-time tracking of remediation interventions.",
+            "Development of a reactive user interface under Quasar (Vue.js) coupled with a Laravel backend and PostgreSQL database."
+          ]
         }
       }
     },
