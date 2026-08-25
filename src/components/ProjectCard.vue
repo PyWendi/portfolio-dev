@@ -14,6 +14,7 @@ const {
     preview_url,
 } = defineProps<ProjectCardProps>()
 
+    console.log(description)
 
 </script>
 
@@ -38,7 +39,9 @@ const {
 
             <!-- Project description -->
             <p class="text-[13px] xl:text-[15px] text-justify mt-[20px]">
-                {{ description }}
+                <span v-for="(desc, index) in description" :key="index" class="block mb-4">
+                    <span class="text-green-400">- </span>{{ desc }} <br>
+                </span>
             </p>
 
             <!-- Technos -->

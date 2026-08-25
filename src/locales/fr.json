@@ -15,6 +15,7 @@
       "salutation": "Salutation,",
       "intro_prefix": "Je suis",
       "role": "Développeur Fullstack",
+      "open_to_work": "Ouvert au travail",
       "quote": "Passionné par le code, \nanimé par la curiosité, \net porté par la \npersévérance.",
       "illustration_alt": "Illustration principale",
       "links": {
@@ -42,52 +43,87 @@
         "portfolio": {
           "title": "Portfolio Web",
           "post": "Développeur Frontend",
-          "description": "Application web responsive et modulaire développée sur mesure avec Vue 3 et Tailwind CSS."
+          "description": [
+            "Application web responsive développée sur mesure pour présenter mes projets, mes compétences et mon parcours."
+          ]
         },
         "pilote": {
           "title": "Pilote360",
           "post": "Développeur Fullstack et Chef de projet",
-          "description": "SaaS de gestion financière et d'optimisation de trésorerie."
+          "description": [
+            "Conception d'une plateforme SaaS permettant la centralisation, la visualisation et l'analyse stratégique des finances pour entreprises et particuliers.",
+            "Développement d'outils décisionnels interactifs et intégration de systèmes de gestion de factures et d'essais.",
+            "Mise en place d'automatisations via n8n pour les notifications clients et la gestion des processus financiers."
+          ]
         },
         "winedge": {
           "title": "Winedge",
           "post": "Développeur Fullstack",
-          "description": "Plateforme FinTech de micro-épargne et d'investissements automatisés."
+          "description": [
+            "Conception d'une solution FinTech d'épargne silencieuse calculée automatiquement sur les arrondis de transactions quotidiennes.",
+            "Développement du système de conversion en temps réel des sommes épargnées en crypto-actifs.",
+            "Implémentation du registre de comptes utilisateurs et du suivi des soldes attribués.",
+            "Automatisation des scenarios d'email et de notifications via n8n."
+          ]
         },
         "cloud": {
           "title": "Cloud SOIBY",
           "post": "Développeur Fullstack",
-          "description": "Plateforme d'hébergement cloud et de gestion d'infrastructure web (en cours de développement)."
+          "description": [
+            "Plateforme d'hébergement cloud et de gestion d'infrastructure web (en cours de développement).",
+            "Implémentation du moteur de gestion des offres, des modèles de souscription et du renouvellement automatique des plans."
+          ]
         },
         "sco_app": {
           "title": "SCO App",
           "post": "Développeur Backend (Projet d'études)",
-          "description": "Application web conçue pour centraliser les dossiers étudiants et fluidifier les processus administratifs."
+          "description": [
+            "Conception et développement d'une application web centralisée permettant à l'administration d'optimiser le suivi et le traitement des dossiers scolaires.",
+            "Implémentation d'une API robuste avec Flask, gestion d'une base de données PostgreSQL et intégration du service Ably pour la gestion de notifications et flux en temps réel.  "
+          ]
         },
         "kosher": {
           "title": "NeedKOSHER",
           "post": "Développeur Fullstack (Freelance)",
-          "description": "Plateforme web centralisée regroupant les services de voyage, d'événements et de restauration pour la communauté juive."
+          "description": [
+            "/Conception et mise en production d'une application web multi-services visant à renforcer les interactions et le partage de services au sein de la communauté.",
+            "Intégration de modules d'interaction couvrant la gestion d'événements, les voyages, la restauration et l'entraide communautaire.",
+            "Développement d'une interface frontend réactive avec Nuxt.js couplée à une API REST sous Express.js, Sequelize et MySQL."
+          ]
         },
         "finflow": {
           "title": "UACEEM FinFlowImg",
           "post": "Développeur Fullstack (Stage)",
-          "description": "Application web conçue pour numériser et suivre toutes les transactions financières de l'université."
+          "description": [
+            "Conception et réalisation du module central de gestion financière de l'université, couvrant le cycle des inscriptions étudiantes jusqu'au suivi analytique des flux internes.",
+            "mplémentation du moteur de transactions sur opérations diverses et création de tableaux de bord financiers pour la visualisation en temps réel et le reporting.",
+            "Encadrement technique des stagiaires sur le projet, assistance à la conception d'architecture et gestion de la stratégie de branches GitHub."
+          ]
         },
         "uaceem_site": {
           "title": "Site web UACEEM v1",
           "post": "Développeur Frontend (Stage)",
-          "description": "Conception et développement du site officiel (V1) de l'Université ACEEM."
+          "description": [
+            "Conception et développement du site officiel (V1) de l'Université ACEEM."
+          ]
         },
         "call_law": {
           "title": "Call-Law",
           "post": "Développeur Fullstack (Projet d'études)",
-          "description": "Plateforme de consultation juridique développée avec React Native (optimisée d'abord pour le web, ajustement mobile à venir)."
+          "description": [
+            "Conception et développement d'une application mobile permettant la mise en relation entre clients et avocats pour la gestion de consultations juridiques.",
+            "Intégration d'une interface mobile fluide développée avec React Native (TypeScript) connectée à une API REST sous Django.",
+            "Implémentation du système de planification des créneaux, du suivi des demandes et du statut des rendez-vous."
+          ]
         },
         "mtp_urgence": {
           "title": "MTP Urgence",
           "post": "Développeur Fullstack",
-          "description": "Application web de suivi en temps réel et de centralisation des travaux d'urgence à l'échelle nationale et régionale."
+          "description": [
+            "Conception et développement d'une application web visant à fluidifier le contrôle et à centraliser le partage des données à caractère d'urgence entre les services centraux et régionaux.",
+            "Implémentation du système de qualification des incidents, d'affectation automatique des responsables et de suivi des interventions de remédiation en temps réel.",
+            "Développement d'une interface utilisateur réactive sous Quasar (Vue.js) couplée à un backend Laravel et une base de données PostgreSQL."
+          ]
         }
       }
     },

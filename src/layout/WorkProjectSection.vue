@@ -20,14 +20,14 @@ import mtpUrgencyImg from '../assets/img/projects/mtp-urgency.png';
 import callLawImg from '../assets/img/projects/call-law.png';
 import uaccemSiteImg from '../assets/img/projects/uaccem-website.png';
 
-const { t } = useI18n()
+const { t, tm } = useI18n()
 
 // image: new URL('../assets/img/projects/sco_app.jpg', import.meta.url).href,
 const projects = computed(() => [
     {
         project_title: t('sections.projects.items.portfolio.title'),
         post: t('sections.projects.items.portfolio.post'),
-        description: t('sections.projects.items.portfolio.description'),
+        description: tm('sections.projects.items.portfolio.description') as string[],
         technos: ['Vue.js', 'Tailwind CSS'],
         source_url: "https://github.com/PyWendi/portfolio-dev",
         preview_url: "https://andersons-portfolio.netlify.app/",
@@ -38,7 +38,7 @@ const projects = computed(() => [
     {
         project_title: t('sections.projects.items.pilote.title'),
         post: t('sections.projects.items.pilote.post'),
-        description: t('sections.projects.items.pilote.description'),
+        description: tm('sections.projects.items.pilote.description') as string[],
         technos: ['FastAPI', 'React.js', 'MongoDB', 'Tailwind CSS', 'AI-Assisted Developement', 'N8N'],
         source_url: "",
         preview_url: "https://pilote360.io/",
@@ -49,7 +49,7 @@ const projects = computed(() => [
     {
         project_title: t('sections.projects.items.winedge.title'),
         post: t('sections.projects.items.winedge.post'),
-        description: t('sections.projects.items.winedge.description'),
+        description: tm('sections.projects.items.winedge.description') as string[],
         technos: ['FastAPI', 'Next.js', 'MongoDB', 'Tailwind CSS', 'AI-Assisted Developement', 'N8N'],
         source_url: "",
         preview_url: "https://winedge.io",
@@ -60,7 +60,7 @@ const projects = computed(() => [
     {
         project_title: t('sections.projects.items.cloud.title'),
         post: t('sections.projects.items.cloud.post'),
-        description: t('sections.projects.items.cloud.description'),
+        description: tm('sections.projects.items.cloud.description') as string[],
         technos: ['FastAPI', 'React.js', 'PostgreSQL', 'Tailwind CSS', 'AI-Assisted Developement', 'N8N'],
         source_url: "",
         preview_url: "",
@@ -71,7 +71,7 @@ const projects = computed(() => [
     {
         project_title: t('sections.projects.items.sco_app.title'),
         post: t('sections.projects.items.sco_app.post'),
-        description: t('sections.projects.items.sco_app.description'),
+        description: tm('sections.projects.items.sco_app.description') as string[],
         technos: ['FastAPI', 'Ably', 'Next.js', 'PostgreSQL', 'Tailwind CSS'],
         source_url: "",
         preview_url: "",
@@ -82,7 +82,7 @@ const projects = computed(() => [
     {
         project_title: t('sections.projects.items.kosher.title'),
         post: t('sections.projects.items.kosher.post'),
-        description: t('sections.projects.items.kosher.description'),
+        description: tm('sections.projects.items.kosher.description') as string[],
         technos: ['Nuxt', 'Tailwind CSS', 'Express.js', 'MySQL'],
         source_url: "",
         preview_url: "https://web.koshergate.com",
@@ -93,7 +93,7 @@ const projects = computed(() => [
     {
         project_title: t('sections.projects.items.finflow.title'),
         post: t('sections.projects.items.finflow.post'),
-        description: t('sections.projects.items.finflow.description'),
+        description: tm('sections.projects.items.finflow.description') as string[],
         technos: ['Laravel', 'Tailwind CSS', 'Blade', 'MySQL'],
         source_url: "",
         preview_url: "",
@@ -104,7 +104,7 @@ const projects = computed(() => [
     {
         project_title: t('sections.projects.items.uaceem_site.title'),
         post: t('sections.projects.items.uaceem_site.post'),
-        description: t('sections.projects.items.uaceem_site.description'),
+        description: tm('sections.projects.items.uaceem_site.description') as string[],
         technos: ['HTML', 'CSS', 'Javascrypt'],
         source_url: "",
         preview_url: "",
@@ -115,7 +115,7 @@ const projects = computed(() => [
     {
         project_title: t('sections.projects.items.call_law.title'),
         post: t('sections.projects.items.call_law.post'),
-        description: t('sections.projects.items.call_law.description'),
+        description: tm('sections.projects.items.call_law.description') as string[],
         technos: ['Django', 'React Native', 'PostgreSQL', 'Tailwind CSS'],
         source_url: "",
         preview_url: "",
@@ -126,7 +126,7 @@ const projects = computed(() => [
     {
         project_title: t('sections.projects.items.mtp_urgence.title'),
         post: t('sections.projects.items.mtp_urgence.post'),
-        description: t('sections.projects.items.mtp_urgence.description'),
+        description: tm('sections.projects.items.mtp_urgence.description') as string[],
         technos: ['Quasar', 'Laravel', 'PostgreSQL'],
         source_url: "",
         preview_url: "",

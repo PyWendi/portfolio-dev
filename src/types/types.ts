@@ -23,7 +23,7 @@ export interface SkillsProps {
 export interface ProjectCardProps {
     project_title: string;
     post: string;
-    description: string;
+    description: string[];
     tecnhos: string[];
     with_source: boolean;
     source_url: string;
