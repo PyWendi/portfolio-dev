@@ -44,7 +44,6 @@ const { t } = useI18n()
                         :yoyo="false"
                         :pause-on-hover="false"
                     />
-                    <OpenToWork/>
                 </div>
 
                 <div class="text-[17px] sm:text-[17px] md:text-[20px] lg:text-[30px] xl:text-[40px] whitespace-pre-line">
